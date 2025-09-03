@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "test": "vitest",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
@@ -25,6 +27,8 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@playwright/test": "^1.45.0",
+    "vitest": "^1.5.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

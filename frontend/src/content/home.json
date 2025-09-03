@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Adtech Simplified",
+    "title": "Reach the right customers",
+    "subtitle": "Plug-and-play tools for sales teams.",
+    "primaryCta": { "label": "Get started", "href": "/demo" },
+    "secondaryCta": { "label": "Talk to sales", "href": "/contact" },
+    "trustLogos": [
+      { "alt": "Client A" },
+      { "alt": "Client B" },
+      { "alt": "Client C" }
+    ]
+  },
+  "stickyPanels": [
+    { "title": "Ingest", "body": "Collect first‑party data.", "icon": "ingest" },
+    { "title": "Configure", "body": "Segment audiences in minutes.", "icon": "configure" },
+    { "title": "Activate", "body": "Deploy to every channel.", "icon": "activate" }
+  ],
+  "splitReveal": [
+    { "title": "No code setup", "body": "Drop in script and you're live.", "media": "setup" },
+    { "title": "Real‑time cohorts", "body": "Update targeting on the fly.", "media": "cohorts" }
+  ],
+  "metrics": [
+    { "label": "ROI", "value": "200%", "caption": "Average return" },
+    { "label": "Setup", "value": "<1hr", "caption": "Go live fast" },
+    { "label": "Reach", "value": "+50%", "caption": "More qualified leads" }
+  ],
+  "logos": [
+    { "alt": "Logo 1" },
+    { "alt": "Logo 2" },
+    { "alt": "Logo 3" },
+    { "alt": "Logo 4" }
+  ],
+  "cta": {
+    "title": "Ready to accelerate?",
+    "primary": { "label": "Book a demo", "href": "/demo" },
+    "secondary": { "label": "Talk to sales", "href": "/contact" }
+  }
+}
