@@ -1,0 +1,40 @@
+{
+  "brand": { "name": "Consaience Partners" },
+  "hero": {
+    "eyebrow": "Plug-and-play Adtech",
+    "title": "Target the right accounts. Win the right deals.",
+    "subtitle": "Consaience Partners snaps into your stack to help sales teams focus on customer groups most likely to convert—privacy-first and enterprise-ready.",
+    "primaryCta": { "label": "Book a demo", "href": "/contact" },
+    "secondaryCta": { "label": "Talk to sales", "href": "/contact" },
+    "trustLogos": [{ "alt": "Brand A" }, { "alt": "Brand B" }, { "alt": "Brand C" }]
+  },
+  "capabilities": [
+    { "icon": "users", "title": "Unified audience graph", "body": "Bring CRM, MAP, and web signals together without wrestling with IDs." },
+    { "icon": "shield", "title": "Privacy-safe activation", "body": "Consent-aware segmentation with regional controls built-in." },
+    { "icon": "workflow", "title": "Salesforce-friendly", "body": "Sync intent and segment membership straight into your pipelines." },
+    { "icon": "wand", "title": "Self-serve segments", "body": "Launch in minutes, not months—no data ticket required." },
+    { "icon": "bolt", "title": "Real-time audiences", "body": "Stream changes as they happen so go-to-market stays timely." },
+    { "icon": "puzzle", "title": "Plugs into anything", "body": "Adapters for ads, email, and web personalization—mocked safely here." }
+  ],
+  "howItWorks": [
+    { "step": "Ingest", "body": "Connect CRM, upload CSVs, and add web events—no heavy lift.", "icon": "download" },
+    { "step": "Configure", "body": "Define segments by firmographic and behavioral traits.", "icon": "sliders" },
+    { "step": "Activate", "body": "Send audiences to channels and alert sales on high-intent activity.", "icon": "send" }
+  ],
+  "metrics": [
+    { "label": "Faster activation", "value": "3x", "caption": "from segment to spend" },
+    { "label": "Lift in win rate", "value": "+18%", "caption": "on targeted accounts" },
+    { "label": "Setup time", "value": "< 1 day", "caption": "to first audience live" }
+  ],
+  "resources": [
+    { "title": "The B2B audience playbook", "slug": "b2b-audience-playbook" },
+    { "title": "Privacy by design for GTM teams", "slug": "privacy-by-design" },
+    { "title": "From MQLs to buying groups", "slug": "mqls-to-buying-groups" }
+  ],
+  "ctaEndcap": {
+    "title": "Start targeting the right accounts today.",
+    "subtitle": "Plug in, define your first segment, and watch your pipeline sharpen.",
+    "primaryCta": { "label": "Book a demo", "href": "/contact" },
+    "secondaryCta": { "label": "Talk to sales", "href": "/contact" }
+  }
+}

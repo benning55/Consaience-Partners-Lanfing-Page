@@ -1,11 +1,11 @@
-import { ParallaxHero } from './(marketing)/_components/ParallaxHero';
-import { CapabilitiesGrid } from './(marketing)/_components/CapabilitiesGrid';
-import { StickyPanels } from './(marketing)/_components/StickyPanels';
-import { SplitReveal } from './(marketing)/_components/SplitReveal';
-import { MetricTiles } from './(marketing)/_components/MetricTiles';
-import { LogoMarquee } from './(marketing)/_components/LogoMarquee';
-import { ResourcesTeasers } from './(marketing)/_components/ResourcesTeasers';
-import { CTAEndcap } from './(marketing)/_components/CTAEndcap';
+import { ParallaxHero } from './_components/ParallaxHero';
+import { CapabilitiesGrid } from './_components/CapabilitiesGrid';
+import { StickyPanels } from './_components/StickyPanels';
+import { SplitReveal } from './_components/SplitReveal';
+import { MetricTiles } from './_components/MetricTiles';
+import { LogoMarquee } from './_components/LogoMarquee';
+import { ResourcesTeasers } from './_components/ResourcesTeasers';
+import { CTAEndcap } from './_components/CTAEndcap';
 import { homeContent } from '@/lib/content';
 
 export default function HomePage() {
