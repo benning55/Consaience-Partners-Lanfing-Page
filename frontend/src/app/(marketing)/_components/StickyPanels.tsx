@@ -4,6 +4,8 @@ import { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
 import { Download, Sliders, Send } from 'lucide-react';
+import { BackgroundElements } from './BackgroundElements';
+import { AnimatedLines } from './AnimatedLines';
 
 interface Step {
   step: string;
@@ -45,7 +47,10 @@ export function StickyPanels({ steps }: StickyPanelsProps) {
   return (
     <section ref={containerRef} className="relative">
       {/* Sticky Container */}
-      <div className="sticky top-0 h-screen flex items-center justify-center bg-white">
+      <div className="sticky top-0 h-screen flex items-center justify-center bg-white relative overflow-hidden">
+        {/* Background Elements */}
+        <BackgroundElements variant="section" intensity="subtle" />
+        <AnimatedLines variant="grid" intensity="subtle" />
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Content */}

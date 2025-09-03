@@ -5,6 +5,7 @@ import { AdtechProvider } from "@/lib/adtech";
 import { Header } from "./(marketing)/_components/Header";
 import { Footer } from "./(marketing)/_components/Footer";
 import { StructuredData } from "./(marketing)/_components/StructuredData";
+import { ScrollProgress } from "./(marketing)/_components/ScrollProgress";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -44,9 +45,10 @@ export default function RootLayout({
       <body className="antialiased bg-white text-black">
         <AdtechProvider>
           <StructuredData />
+          <ScrollProgress />
           <div className="min-h-screen flex flex-col">
             <Header />
-            <main className="flex-1">
+            <main className="flex-1 pt-24">
               {children}
             </main>
             <Footer />

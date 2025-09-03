@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
 import { useAdtech } from '@/lib/adtech';
+import { BackgroundElements } from './BackgroundElements';
+import { FloatingElements } from './FloatingElements';
+import { AnimatedLines } from './AnimatedLines';
 
 interface CTAEndcapProps {
   title: string;
@@ -26,32 +29,13 @@ export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta }: CTAEndc
 
   return (
     <section className="relative section bg-gray-900 text-white overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
-        <svg
-          className="absolute inset-0 w-full h-full"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <pattern
-              id="grid-dark"
-              width="10"
-              height="10"
-              patternUnits="userSpaceOnUse"
-            >
-              <path
-                d="M 10 0 L 0 0 0 10"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.5"
-              />
-            </pattern>
-          </defs>
-          <rect width="100" height="100" fill="url(#grid-dark)" />
-        </svg>
-      </div>
+      {/* Enhanced Background Elements */}
+      <BackgroundElements variant="cta" intensity="strong" />
+      <FloatingElements count={12} intensity="medium" size="medium" />
+      <AnimatedLines variant="diagonal" intensity="medium" />
+      
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
 
       <div className="container relative z-10">
         <motion.div

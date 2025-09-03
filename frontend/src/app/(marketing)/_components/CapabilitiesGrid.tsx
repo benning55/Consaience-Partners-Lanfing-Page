@@ -11,6 +11,8 @@ import {
   Zap, 
   Puzzle 
 } from 'lucide-react';
+import { BackgroundElements } from './BackgroundElements';
+import { FloatingElements } from './FloatingElements';
 
 interface Capability {
   icon: string;
@@ -35,8 +37,12 @@ export function CapabilitiesGrid({ capabilities }: CapabilitiesGridProps) {
   const shouldReduceMotion = useReducedMotionPref();
 
   return (
-    <section className="section bg-gray-50">
-      <div className="container">
+    <section className="section bg-gray-50 relative overflow-hidden">
+      {/* Background Elements */}
+      <BackgroundElements variant="section" intensity="subtle" />
+      <FloatingElements count={6} intensity="subtle" size="small" />
+      
+      <div className="container relative z-10">
         <motion.div
           initial="hidden"
           whileInView="visible"

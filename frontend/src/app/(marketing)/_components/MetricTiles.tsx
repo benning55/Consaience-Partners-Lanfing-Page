@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
 import { motionVariants } from '@/lib/motion';
+import { BackgroundElements } from './BackgroundElements';
+import { AnimatedLines } from './AnimatedLines';
 
 interface Metric {
   label: string;
@@ -18,8 +20,12 @@ export function MetricTiles({ metrics }: MetricTilesProps) {
   const shouldReduceMotion = useReducedMotionPref();
 
   return (
-    <section className="section bg-gray-50">
-      <div className="container">
+    <section className="section bg-gray-50 relative overflow-hidden">
+      {/* Background Elements */}
+      <BackgroundElements variant="section" intensity="subtle" />
+      <AnimatedLines variant="horizontal" intensity="subtle" />
+      
+      <div className="container relative z-10">
         <motion.div
           initial="hidden"
           whileInView="visible"

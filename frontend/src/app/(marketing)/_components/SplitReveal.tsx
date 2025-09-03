@@ -3,6 +3,8 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
+import { BackgroundElements } from './BackgroundElements';
+import { FloatingElements } from './FloatingElements';
 
 interface SplitRevealProps {
   children: React.ReactNode;
@@ -38,8 +40,12 @@ export function SplitReveal({ children, media, reverse = false }: SplitRevealPro
   );
 
   return (
-    <section ref={containerRef} className="section bg-white">
-      <div className="container">
+    <section ref={containerRef} className="section bg-white relative overflow-hidden">
+      {/* Background Elements */}
+      <BackgroundElements variant="section" intensity="subtle" />
+      <FloatingElements count={4} intensity="subtle" size="small" />
+      
+      <div className="container relative z-10">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
           reverse ? 'lg:grid-flow-col-dense' : ''
         }`}>

@@ -5,6 +5,10 @@ import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
 import { useAdtech } from '@/lib/adtech';
+import { BackgroundElements } from './BackgroundElements';
+import { FloatingElements } from './FloatingElements';
+import { AnimatedLines } from './AnimatedLines';
+import { StaggeredText } from './TextReveal';
 
 interface ParallaxHeroProps {
   eyebrow?: string;
@@ -70,35 +74,16 @@ export function ParallaxHero({
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white"
     >
-      {/* Background Pattern */}
+      {/* Enhanced Background Elements */}
+      <BackgroundElements variant="hero" intensity="medium" />
+      <FloatingElements count={8} intensity="subtle" size="small" />
+      <AnimatedLines variant="diagonal" intensity="subtle" />
+      
+      {/* Subtle gradient overlay */}
       <motion.div
         style={{ y: backgroundY }}
-        className="absolute inset-0 opacity-5"
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200" />
-        <svg
-          className="absolute inset-0 w-full h-full"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <pattern
-              id="grid"
-              width="10"
-              height="10"
-              patternUnits="userSpaceOnUse"
-            >
-              <path
-                d="M 10 0 L 0 0 0 10"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.5"
-              />
-            </pattern>
-          </defs>
-          <rect width="100" height="100" fill="url(#grid)" />
-        </svg>
-      </motion.div>
+        className="absolute inset-0 bg-gradient-to-br from-gray-50/30 via-transparent to-gray-100/20"
+      />
 
       {/* Content */}
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -117,14 +102,13 @@ export function ParallaxHero({
             </motion.p>
           )}
           
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-balance mb-6"
-          >
-            {title}
-          </motion.h1>
+          <h1 className="text-balance mb-6">
+            <StaggeredText 
+              text={title} 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold"
+              staggerDelay={0.08}
+            />
+          </h1>
           
           {subtitle && (
             <motion.p

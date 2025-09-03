@@ -50,10 +50,10 @@ export function Header() {
         opacity: shouldReduceMotion ? 1 : headerOpacity,
         y: shouldReduceMotion ? 0 : headerY,
       }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-6 left-4 right-4 z-40 transition-all duration-300 rounded-2xl ${
         isScrolled 
-          ? 'bg-white/80 backdrop-blur-md border-b border-gray-200' 
-          : 'bg-transparent'
+          ? 'bg-white/90 backdrop-blur-md border border-gray-200 shadow-lg' 
+          : 'bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm'
       }`}
     >
       <div className="container mx-auto px-6">
