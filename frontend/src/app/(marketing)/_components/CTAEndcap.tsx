@@ -45,7 +45,7 @@ export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta }: CTAEndc
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             {title}
           </h2>
           

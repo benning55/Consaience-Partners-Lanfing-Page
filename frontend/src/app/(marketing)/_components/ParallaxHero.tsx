@@ -76,7 +76,7 @@ export function ParallaxHero({
     >
       {/* Enhanced Background Elements */}
       <BackgroundElements variant="hero" intensity="medium" />
-      <FloatingElements count={8} intensity="subtle" size="small" />
+      <FloatingElements count={12} intensity="subtle" size="small" />
       <AnimatedLines variant="diagonal" intensity="subtle" />
       
       {/* Subtle gradient overlay */}
