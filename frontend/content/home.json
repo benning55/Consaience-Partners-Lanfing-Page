@@ -1,36 +1,42 @@
 {
   "brand": { "name": "Consaience Partners" },
   "hero": {
-    "eyebrow": "Salesforce Agentic Automation",
-    "title": "Empowering Agentic AI Solutions — Built on Salesforce and Beyond",
-    "subtitle": "We help enterprises automate inquiries, resolve more cases, and scale without adding headcount.",
-    "supporting": "Scale your contact center with AI that resolves inquiries automatically.",
+    "eyebrow": "Slide 1 / Problem & Promise",
+    "title": "Agentic AI on Salesforce resolves customer inquiries automatically.",
+    "subtitle": "Consaience Partners helps enterprises automate enquiries, resolve more cases, and scale customer service without adding headcount.",
+    "supporting": "We combine Salesforce Agentforce, Einstein AI, and your Knowledge Articles so every response is fast, accurate, and governed.",
     "primaryCta": { "label": "Book a strategy call", "href": "/contact" },
-    "secondaryCta": { "label": "See how it works", "href": "/products-services" },
+    "secondaryCta": { "label": "See the full solution", "href": "/products-services" },
     "trustLogos": []
   },
+  "capabilitiesEyebrow": "Slide 2 / Solution Snapshot",
+  "capabilitiesTitle": "What Consaience Partners delivers",
+  "capabilitiesDescription": "Salesforce-native automations that understand enquiries, resolve them automatically, and hand off complex cases with full context.",
   "capabilities": [
     {
       "icon": "workflow",
-      "title": "More Cases, Less Labor",
-      "body": "Reduce manual workloads by automating repetitive enquiries inside Salesforce."
+      "title": "More cases, less labour",
+      "body": "Automate repetitive enquiries inside Salesforce so agents stay focused on conversations that need judgement."
     },
     {
       "icon": "wand",
-      "title": "AI that Understands Your Business",
-      "body": "Connect Agentforce and Einstein AI to your CRM and Knowledge Articles for accurate responses."
+      "title": "AI that understands your business",
+      "body": "Ground every answer in your CRM and Knowledge Articles so responses stay accurate and brand-aligned."
     },
     {
       "icon": "bolt",
-      "title": "Fast Implementation",
-      "body": "Deploy within weeks using Salesforce Agentforce frameworks designed for SMEs and enterprises."
+      "title": "Fast implementation",
+      "body": "Deploy Agentforce playbooks in weeks using frameworks tuned for SMEs and global enterprises."
     },
     {
       "icon": "shield",
       "title": "Powered by Salesforce",
-      "body": "Keep every interaction governed by your existing Salesforce data, processes, and permissions."
+      "body": "Leverage existing permissions, governance, and audit trails to keep automation compliant from day one."
     }
   ],
+  "howItWorksEyebrow": "Slide 3 / Implementation Blueprint",
+  "howItWorksTitle": "How we launch an agentic service desk",
+  "howItWorksDescription": "A three-step motion that connects your Salesforce data, configures intelligent agents, and iterates with live feedback.",
   "howItWorks": [
     {
       "step": "Connect Salesforce data",
@@ -39,15 +45,18 @@
     },
     {
       "step": "Configure intelligent agents",
-      "body": "Use Salesforce Agentforce and Einstein AI to understand enquiries and retrieve context.",
+      "body": "Use Salesforce Agentforce and Einstein AI to understand enquiries and retrieve context-aware guidance.",
       "icon": "sliders"
     },
     {
-      "step": "Activate and optimize",
+      "step": "Activate and optimise",
       "body": "Launch automation across channels and iterate using CRM history and agent feedback.",
       "icon": "send"
     }
   ],
+  "metricsEyebrow": "Slide 5 / Market Validation",
+  "metricsTitle": "Measured impact from live deployments",
+  "metricsDescription": "Our customers cut manual handling while preserving service quality across channels.",
   "metrics": [
     {
       "label": "Manual workload reduction",
@@ -62,8 +71,9 @@
   ],
   "resources": [],
   "ctaEndcap": {
-    "title": "Automate customer enquiry resolution with Salesforce Agentforce.",
-    "subtitle": "Bring AI, data, and process design together to deliver consistent, human-centered support.",
+    "eyebrow": "Slide 6 / Next Step",
+    "title": "Ready to scale support without adding headcount?",
+    "subtitle": "Book a strategy call to map your first Salesforce Agentforce use case and see where automation delivers the fastest return.",
     "primaryCta": { "label": "Book a strategy call", "href": "/contact" },
     "secondaryCta": { "label": "Explore services", "href": "/products-services" }
   }

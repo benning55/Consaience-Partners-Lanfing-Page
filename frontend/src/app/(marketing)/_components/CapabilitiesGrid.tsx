@@ -3,13 +3,13 @@
 import { motion } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
 import { motionVariants } from '@/lib/motion';
-import { 
-  Users, 
-  Shield, 
-  Workflow, 
-  Wand2, 
-  Zap, 
-  Puzzle 
+import {
+  Users,
+  Shield,
+  Workflow,
+  Wand2,
+  Zap,
+  Puzzle,
 } from 'lucide-react';
 import { BackgroundElements } from './BackgroundElements';
 import { FloatingElements } from './FloatingElements';
@@ -22,6 +22,9 @@ interface Capability {
 
 interface CapabilitiesGridProps {
   capabilities: Capability[];
+  eyebrow?: string;
+  title?: string;
+  description?: string;
 }
 
 const iconMap = {
@@ -33,7 +36,12 @@ const iconMap = {
   puzzle: Puzzle,
 };
 
-export function CapabilitiesGrid({ capabilities }: CapabilitiesGridProps) {
+export function CapabilitiesGrid({
+  capabilities,
+  eyebrow,
+  title,
+  description,
+}: CapabilitiesGridProps) {
   const shouldReduceMotion = useReducedMotionPref();
 
   return (
@@ -41,7 +49,7 @@ export function CapabilitiesGrid({ capabilities }: CapabilitiesGridProps) {
       {/* Background Elements */}
       <BackgroundElements variant="section" intensity="subtle" />
       <FloatingElements count={10} intensity="subtle" size="small" />
-      
+
       <div className="container relative z-10">
         <motion.div
           initial="hidden"
@@ -50,18 +58,26 @@ export function CapabilitiesGrid({ capabilities }: CapabilitiesGridProps) {
           variants={shouldReduceMotion ? {} : motionVariants.staggerContainer}
           className="text-center mb-16"
         >
+          {eyebrow && (
+            <motion.p
+              variants={shouldReduceMotion ? {} : motionVariants.fadeInUp}
+              className="eyebrow mb-4"
+            >
+              {eyebrow}
+            </motion.p>
+          )}
           <motion.h2
             variants={shouldReduceMotion ? {} : motionVariants.fadeInUp}
             className="section-title mb-6"
           >
-            Agentic building blocks for Salesforce service teams
+            {title ?? 'Agentic building blocks for Salesforce service teams'}
           </motion.h2>
           <motion.p
             variants={shouldReduceMotion ? {} : motionVariants.fadeInUp}
             className="section-description"
           >
-            Orchestrate data, knowledge, and automations so customers receive immediate,
-            accurate answers and agents stay focused on complex work.
+            {description ??
+              'Orchestrate data, knowledge, and automations so customers receive immediate, accurate answers and agents stay focused on complex work.'}
           </motion.p>
         </motion.div>
 
@@ -74,7 +90,7 @@ export function CapabilitiesGrid({ capabilities }: CapabilitiesGridProps) {
         >
           {capabilities.map((capability, index) => {
             const IconComponent = iconMap[capability.icon as keyof typeof iconMap];
-            
+
             return (
               <motion.div
                 key={index}

@@ -14,18 +14,37 @@ interface Metric {
 
 interface MetricTilesProps {
   metrics: Metric[];
+  eyebrow?: string;
+  title?: string;
+  description?: string;
 }
 
-export function MetricTiles({ metrics }: MetricTilesProps) {
+export function MetricTiles({
+  metrics,
+  eyebrow,
+  title,
+  description,
+}: MetricTilesProps) {
   const shouldReduceMotion = useReducedMotionPref();
 
   return (
     <section className="section bg-gray-50 relative overflow-hidden">
-      {/* Background Elements */}
       <BackgroundElements variant="section" intensity="subtle" />
       <AnimatedLines variant="horizontal" intensity="subtle" />
-      
+
       <div className="container relative z-10">
+        {(eyebrow || title || description) && (
+          <div className="text-center mb-12">
+            {eyebrow && <p className="eyebrow">{eyebrow}</p>}
+            <h2 className="section-title mt-4">
+              {title ?? 'Proven results'}
+            </h2>
+            <p className="section-description mt-4">
+              {description ??
+                'Our Salesforce Agentforce implementations deliver measurable impact across operations.'}
+            </p>
+          </div>
+        )}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -52,9 +71,7 @@ export function MetricTiles({ metrics }: MetricTilesProps) {
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
                   {metric.label}
                 </h3>
-                <p className="text-gray-600">
-                  {metric.caption}
-                </p>
+                <p className="text-gray-600">{metric.caption}</p>
               </motion.div>
             </motion.div>
           ))}

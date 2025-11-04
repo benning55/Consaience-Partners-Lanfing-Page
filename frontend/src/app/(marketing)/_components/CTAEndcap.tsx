@@ -13,9 +13,10 @@ interface CTAEndcapProps {
   subtitle: string;
   primaryCta: { label: string; href: string };
   secondaryCta: { label: string; href: string };
+  eyebrow?: string;
 }
 
-export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta }: CTAEndcapProps) {
+export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta, eyebrow }: CTAEndcapProps) {
   const shouldReduceMotion = useReducedMotionPref();
   const { trackEvent } = useAdtech();
 
@@ -45,6 +46,11 @@ export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta }: CTAEndc
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
+          {eyebrow && (
+            <p className="eyebrow text-gray-400 mb-6">
+              {eyebrow}
+            </p>
+          )}
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             {title}
           </h2>

@@ -71,22 +71,32 @@ export default function HomePage() {
         trustLogos={homeContent.hero.trustLogos}
       />
 
-      <CapabilitiesGrid capabilities={homeContent.capabilities} />
+      <CapabilitiesGrid
+        capabilities={homeContent.capabilities}
+        eyebrow={homeContent.capabilitiesEyebrow}
+        title={homeContent.capabilitiesTitle}
+        description={homeContent.capabilitiesDescription}
+      />
 
       <div id="how-it-works">
-        <StickyPanels steps={homeContent.howItWorks} />
+        <StickyPanels
+          steps={homeContent.howItWorks}
+          eyebrow={homeContent.howItWorksEyebrow}
+          title={homeContent.howItWorksTitle}
+          description={homeContent.howItWorksDescription}
+        />
       </div>
 
       <SplitReveal>
         <div>
-          <p className="eyebrow">Industrial spotlight</p>
+          <p className="eyebrow">Slide 4 / Use Case Spotlight</p>
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
             AI-powered contact center automation
           </h2>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Whether you are an SME modernizing service or a global enterprise scaling support,
-            manual case handling slows teams down. Our Salesforce Agentforce automation
-            resolves repetitive enquiries instantly so agents stay focused on complex issues.
+            Whether you are an SME modernising service or a global enterprise scaling support,
+            manual case handling slows teams down. Salesforce Agentforce automation resolves
+            repetitive enquiries instantly so agents stay focused on complex issues.
           </p>
           <ul className="space-y-3 mb-6">
             <li className="flex items-start space-x-3">
@@ -104,7 +114,7 @@ export default function HomePage() {
             <li className="flex items-start space-x-3">
               <div className="w-2 h-2 bg-black rounded-full mt-2" />
               <span className="text-gray-700">
-                Learns from every closed case to continually improve automation coverage.
+                Learns from closed cases to extend automation coverage across channels.
               </span>
             </li>
           </ul>
@@ -112,16 +122,18 @@ export default function HomePage() {
             Built on Salesforce Service Cloud and Agentforce, the solution leverages the data,
             processes, and knowledge you already trust to deliver immediate automation.
           </p>
-          <Link
-            href="/use-cases"
-            className="inline-flex mt-8 btn btn-secondary"
-          >
+          <Link href="/use-cases" className="inline-flex mt-8 btn btn-secondary">
             Explore more use cases
           </Link>
         </div>
       </SplitReveal>
 
-      <MetricTiles metrics={homeContent.metrics} />
+      <MetricTiles
+        metrics={homeContent.metrics}
+        eyebrow={homeContent.metricsEyebrow}
+        title={homeContent.metricsTitle}
+        description={homeContent.metricsDescription}
+      />
 
       {homeContent.hero.trustLogos.length > 0 && (
         <LogoMarquee logos={homeContent.hero.trustLogos} />
@@ -136,6 +148,7 @@ export default function HomePage() {
         subtitle={homeContent.ctaEndcap.subtitle}
         primaryCta={homeContent.ctaEndcap.primaryCta}
         secondaryCta={homeContent.ctaEndcap.secondaryCta}
+        eyebrow={homeContent.ctaEndcap.eyebrow}
       />
     </>
   );

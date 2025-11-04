@@ -6,12 +6,12 @@ const canonicalUrl = 'https://consaience.com/bio';
 export const metadata: Metadata = {
   title: 'Team Bios | Consaience Partners',
   description:
-    'Team biographies for Consaience Partners will be published soon. Contact us to learn more about the consultants behind our Salesforce Agentforce work.',
+    'Meet the leadership capabilities behind Consaience Partners. Detailed bios available on request for Salesforce Agentforce programmes.',
   alternates: { canonical: canonicalUrl },
   openGraph: {
     title: 'Team Bios | Consaience Partners',
     description:
-      'Team biographies for Consaience Partners are in progress. Reach out for details about our Salesforce Agentforce specialists.',
+      'Overview of the agentic AI leadership pods at Consaience Partners. Full profiles shared under NDA.',
     url: canonicalUrl,
     siteName: 'Consaience Partners',
     type: 'website',
@@ -20,29 +20,80 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Team Bios | Consaience Partners',
     description:
-      'Team biographies are coming soon. Contact Consaience Partners for information about our Salesforce Agentforce specialists.',
+      'Leadership pods delivering Salesforce Agentforce automation. Request full biographies for evaluation.',
   },
 };
+
+const pods = [
+  {
+    title: 'Agentic Programme Leadership',
+    summary:
+      'Engagement leads with deep Salesforce Service Cloud and Agentforce backgrounds oversee discovery, roadmap definition, and executive communication.',
+    highlights: [
+      '15+ years combined experience delivering Salesforce transformation for regulated industries.',
+      'Own stakeholder alignment, value tracking, and governance cadence.',
+      'Serve as single point of accountability from scoping through optimisation.',
+    ],
+  },
+  {
+    title: 'AI & Knowledge Engineering',
+    summary:
+      'Architects configure Agentforce, Einstein AI, and Knowledge Article ingestion so virtual agents understand enquiries and surface the right answers.',
+    highlights: [
+      'Design and fine-tune intents, guardrails, and escalation logic inside Salesforce.',
+      'Structure Knowledge Articles and CRM data for searchability and compliance.',
+      'Continuously monitor accuracy and incorporate agent feedback into models.',
+    ],
+  },
+  {
+    title: 'Change & Enablement',
+    summary:
+      'Change practitioners ensure adoption across service, operations, and IT teams so automation becomes part of the day-to-day workflow.',
+    highlights: [
+      'Build enablement plans, run pilot training, and capture qualitative feedback.',
+      'Measure KPIs such as deflection, CSAT, and handle time to prove value.',
+      'Coordinate rollouts across regions while maintaining governance requirements.',
+    ],
+  },
+];
 
 export default function BioPage() {
   return (
     <section className="section bg-white">
-      <div className="container max-w-3xl text-center">
-        <p className="eyebrow">Bio</p>
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Team biographies coming soon
-        </h1>
-        <p className="text-lg text-gray-600 leading-relaxed mb-6">
-          We&apos;re preparing detailed biographies for the Salesforce Agentforce consultants who lead Consaience
-          Partners engagements. If you need team information for procurement, security reviews, or stakeholder briefings,
-          reach out and we&apos;ll share the latest roster directly.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <div className="container max-w-5xl">
+        <div className="text-center mb-12">
+          <p className="eyebrow">Slide 1 / Who executes the work</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Leadership pods ready to run your agentic programme
+          </h1>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Detailed biographies are available under NDA. The outline below shows the pods involved in every engagement and how they align to your Salesforce transformation.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {pods.map((pod) => (
+            <article key={pod.title} className="card bg-white flex flex-col">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-3">{pod.title}</h2>
+              <p className="text-gray-600 leading-relaxed mb-4">{pod.summary}</p>
+              <ul className="space-y-3 text-sm text-gray-600">
+                {pod.highlights.map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-1 block w-2 h-2 bg-black rounded-full" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+
+        <div className="text-center mt-16">
+          <p className="text-gray-600 mb-4">
+            Need full CVs, security clearances, or references? Contact us and we&apos;ll provide the documentation your diligence process requires.
+          </p>
           <Link href="/contact" className="btn btn-primary">
-            Contact us
-          </Link>
-          <Link href="/about" className="btn btn-secondary">
-            Learn about Consaience Partners
+            Request full bios
           </Link>
         </div>
       </div>

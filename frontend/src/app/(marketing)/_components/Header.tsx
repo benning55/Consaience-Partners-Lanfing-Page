@@ -7,12 +7,12 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
 
 const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
-  { href: '/products-services', label: 'Product & Services' },
-  { href: '/use-cases', label: 'Industrial Use Cases' },
-  { href: '/contact', label: 'Contact Us' },
-  { href: '/bio', label: 'Bio' },
+  { href: '/', label: 'Overview' },
+  { href: '/about', label: 'Our Approach' },
+  { href: '/products-services', label: 'Services' },
+  { href: '/use-cases', label: 'Use Cases' },
+  { href: '/contact', label: 'Let\'s Talk' },
+  { href: '/bio', label: 'Team' },
 ];
 
 export function Header() {

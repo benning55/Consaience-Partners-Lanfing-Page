@@ -90,7 +90,7 @@ export function ContactForm() {
           transition={{ duration: shouldReduceMotion ? 0 : 0.6 }}
           className="text-center mb-12"
         >
-          <p className="eyebrow">Contact Us</p>
+          <p className="eyebrow">Slide 6 / Next Step</p>
           <h1 className="text-4xl font-bold mb-6 text-gray-900">
             Let&apos;s design your agentic AI roadmap
           </h1>

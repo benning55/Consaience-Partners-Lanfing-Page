@@ -8,7 +8,7 @@ const canonicalUrl = 'https://consaience.com/use-cases';
 export const metadata: Metadata = {
   title: 'Industrial Use Cases | Consaience Partners',
   description:
-    'See how Consaience Partners applies Salesforce Agentforce across contact centers and retail to automate customer enquiries.',
+    'See how Consaience Partners applies Salesforce Agentforce across contact centres and retail to automate customer enquiries.',
   alternates: { canonical: canonicalUrl },
   openGraph: {
     title: 'Industrial Use Cases | Consaience Partners',
@@ -22,20 +22,20 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Industrial Use Cases | Consaience Partners',
     description:
-      'Discover how agentic AI transforms contact centers and retail operations.',
+      'Discover how agentic AI transforms contact centres and retail operations.',
   },
 };
 
 const useCases = [
   {
-    industry: 'AI-Powered Contact Center Automation',
+    industry: 'AI-Powered Contact Centre Automation',
     icon: Headset,
     problem:
-      "Whether you're an SME scaling your first customer support team or a global enterprise managing thousands of daily inquiries, manual case handling slows down operations and increases costs. Agents spend valuable time answering repetitive questions instead of solving complex issues.",
+      "Whether you're an SME scaling your first customer support team or a global enterprise managing thousands of daily enquiries, manual case handling slows down operations and increases costs.",
     solution:
-      'We implemented Salesforce Agentforce to create an AI-powered contact center that integrates directly with your CRM data and Knowledge Articles.',
+      'We implemented Salesforce Agentforce to create an AI-powered contact centre that integrates directly with your CRM data and Knowledge Articles.',
     bullets: [
-      'Understands and responds to customer inquiries automatically.',
+      'Understands and responds to customer enquiries automatically.',
       'Retrieves accurate, context-aware answers from internal data.',
       'Routes complex cases to human agents with full case history.',
     ],
@@ -52,7 +52,7 @@ const useCases = [
     industry: 'Retail & eCommerce - Automated Customer Enquiry Resolution',
     icon: ShoppingBag,
     problem:
-      "Retailers and online sellers, from growing D2C brands to global chains, manage thousands of daily inquiries on order tracking, returns, and promotions. Traditional customer service models can't scale without adding headcount.",
+      "Retailers and online sellers, from growing D2C brands to global chains, manage thousands of daily enquiries on order tracking, returns, and promotions. Traditional customer service models can't scale without adding headcount.",
     solution:
       'Using Salesforce Agentforce, we implemented an AI-driven customer support assistant connected to CRM order data and product information.',
     bullets: [
@@ -61,12 +61,12 @@ const useCases = [
       'Continuously learns from resolved cases to improve accuracy.',
     ],
     outcomes: [
-      'Up to 50% of inquiries auto-resolved without human intervention.',
+      'Up to 50% of enquiries auto-resolved without human intervention.',
       'Faster response times and higher customer satisfaction.',
-      'Reduced contact center costs with scalable automation.',
+      'Reduced contact centre costs with scalable automation.',
     ],
     whyItWorks:
-      'Built entirely on Salesforce Service Cloud, this solution leverages your existing eCommerce CRM and knowledge data - delivering enterprise-grade automation accessible even to SMEs ready to modernize customer service.',
+      'Built entirely on Salesforce Service Cloud, this solution leverages your existing eCommerce CRM and knowledge data - delivering enterprise-grade automation accessible even to SMEs ready to modernise customer service.',
   },
 ];
 
@@ -95,20 +95,19 @@ export default function UseCasesPage() {
 
       <section className="section bg-white">
         <div className="container max-w-4xl text-center">
-          <p className="eyebrow">Industrial Use Cases</p>
+          <p className="eyebrow">Slide 1 / Why customers choose us</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Agentic AI outcomes across industries
+            Agentic AI in action across contact centres and retail
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Explore how Salesforce Agentforce deployments tackle contact center and retail challenges.
-            Each scenario clarifies the problem, outlines the solution, quantifies impact, and explains why the approach works.
+            Each scenario starts with the same story: high enquiry volume, limited headcount, and inconsistent answers. Salesforce Agentforce lets us deliver automation grounded in your own CRM and knowledge assets.
           </p>
         </div>
       </section>
 
       <section className="section bg-gray-50">
         <div className="container max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {useCases.map((useCase) => (
+          {useCases.map((useCase, index) => (
             <article
               key={useCase.industry}
               id={useCase.industry.toLowerCase().replace(/[^a-z0-9]+/g, '-')}
@@ -117,7 +116,7 @@ export default function UseCasesPage() {
               <div className="flex items-center gap-3 mb-4">
                 <useCase.icon className="w-8 h-8 text-black" />
                 <h2 className="text-xl font-semibold text-gray-900">
-                  {useCase.industry}
+                  {`Slide ${index + 2} / ${useCase.industry}`}
                 </h2>
               </div>
               <div className="mt-2">
@@ -137,7 +136,7 @@ export default function UseCasesPage() {
                 </ul>
               </div>
               <div className="mt-6 pt-4 border-t border-gray-200">
-                <p className="text-sm font-semibold uppercase text-gray-500">Outcomes</p>
+                <p className="text-sm font-semibold uppercase text-gray-500">Impact</p>
                 <ul className="space-y-2 text-sm text-gray-600 mt-2">
                   {useCase.outcomes.map((outcome) => (
                     <li key={outcome} className="flex items-start gap-3">
@@ -163,13 +162,13 @@ export default function UseCasesPage() {
       </section>
 
       <section className="section bg-white">
-        <div className="container max-w-4xl card border-gray-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
-            Want a tailored scenario?
+        <div className="container max-w-4xl card border-gray-200 text-center">
+          <p className="eyebrow mb-4">Slide 4 / Shape your scenario</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Ready to scope an agentic AI pilot?
           </h2>
-          <p className="text-gray-600 leading-relaxed text-center mb-6">
-            Tell us about your industry, service KPIs, and Salesforce footprint. We will map your
-            automation opportunity and follow up with recommendations for next steps.
+          <p className="text-gray-600 leading-relaxed mb-6">
+            Share your current enquiry mix, channels, and service KPIs. We will map the automation opportunity, the Agentforce components required, and how to measure impact within your first 90 days.
           </p>
           <div className="flex justify-center">
             <Link href="/contact" className="btn btn-primary">
