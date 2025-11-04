@@ -9,6 +9,7 @@ import { BackgroundElements } from './BackgroundElements';
 import { FloatingElements } from './FloatingElements';
 import { AnimatedLines } from './AnimatedLines';
 import { StaggeredText } from './TextReveal';
+import { ProductDashboard } from './ProductDashboard';
 
 interface ParallaxHeroProps {
   eyebrow?: string;
@@ -74,7 +75,7 @@ export function ParallaxHero({
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-gray-50/30 to-white pt-32 md:pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-gray-50/30 to-white pt-40 md:pt-24 lg:pt-20"
     >
       {/* Enhanced Background Elements */}
       <BackgroundElements variant="hero" intensity="medium" />
@@ -173,6 +174,9 @@ export function ParallaxHero({
             {supporting}
           </motion.p>
         )}
+
+        {/* Product Dashboard Visual */}
+        <ProductDashboard />
 
         {/* Trust Logos */}
         {trustLogos.length > 0 && (

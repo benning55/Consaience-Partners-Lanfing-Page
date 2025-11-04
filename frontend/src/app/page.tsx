@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import Link from 'next/link';
 
 import { ParallaxHero } from './(marketing)/_components/ParallaxHero';
+import { TrustBadges } from './(marketing)/_components/TrustBadges';
 import { CapabilitiesGrid } from './(marketing)/_components/CapabilitiesGrid';
 import { StickyPanels } from './(marketing)/_components/StickyPanels';
-import { SplitReveal } from './(marketing)/_components/SplitReveal';
-import { MetricTiles } from './(marketing)/_components/MetricTiles';
+import { VisualUseCase } from './(marketing)/_components/VisualUseCase';
+import { VisualMetrics } from './(marketing)/_components/VisualMetrics';
+import { VisualTestimonials } from './(marketing)/_components/VisualTestimonials';
+import { TechStackShowcase } from './(marketing)/_components/TechStackShowcase';
 import { LogoMarquee } from './(marketing)/_components/LogoMarquee';
 import { ResourcesTeasers } from './(marketing)/_components/ResourcesTeasers';
 import { CTAEndcap } from './(marketing)/_components/CTAEndcap';
@@ -71,6 +73,8 @@ export default function HomePage() {
         trustLogos={homeContent.hero.trustLogos}
       />
 
+      <TrustBadges />
+
       <CapabilitiesGrid
         capabilities={homeContent.capabilities}
         eyebrow={homeContent.capabilitiesEyebrow}
@@ -87,55 +91,18 @@ export default function HomePage() {
         />
       </div>
 
-      <SplitReveal>
-        <div className="px-4 lg:px-0">
-          <p className="eyebrow">Use Case Spotlight</p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900">
-            Enterprise contact center automation
-          </h2>
-          <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8 leading-relaxed">
-            From mid-market organizations modernizing service operations to global enterprises 
-            scaling support infrastructure, manual case handling creates operational bottlenecks. 
-            Salesforce Agentforce automation resolves routine inquiries instantly, enabling agents 
-            to focus on complex, high-value interactions.
-          </p>
-          <ul className="space-y-3 lg:space-y-4 mb-6 lg:mb-8">
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-black rounded-full mt-1.5 flex-shrink-0" />
-              <span className="text-gray-700 text-sm md:text-base leading-relaxed">
-                Processes and responds to customer inquiries using Salesforce CRM data and enterprise Knowledge Articles
-              </span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-black rounded-full mt-1.5 flex-shrink-0" />
-              <span className="text-gray-700 text-sm md:text-base leading-relaxed">
-                Escalates complex cases to human agents with full context to maintain resolution speed and accuracy
-              </span>
-            </li>
-            <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-black rounded-full mt-1.5 flex-shrink-0" />
-              <span className="text-gray-700 text-sm md:text-base leading-relaxed">
-                Continuously learns from resolved cases to expand automation coverage across all customer channels
-              </span>
-            </li>
-          </ul>
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6 lg:mb-8">
-            Built on Salesforce Service Cloud and Agentforce, our solutions leverage your existing 
-            data infrastructure, business processes, and knowledge repositories to deliver immediate, 
-            measurable automation value.
-          </p>
-          <Link href="/use-cases" className="inline-flex btn btn-secondary text-sm md:text-base">
-            View enterprise use cases
-          </Link>
-        </div>
-      </SplitReveal>
+      <VisualUseCase />
 
-      <MetricTiles
+      <VisualMetrics
         metrics={homeContent.metrics}
         eyebrow={homeContent.metricsEyebrow}
         title={homeContent.metricsTitle}
         description={homeContent.metricsDescription}
       />
+
+      <VisualTestimonials />
+
+      <TechStackShowcase />
 
       {homeContent.hero.trustLogos.length > 0 && (
         <LogoMarquee logos={homeContent.hero.trustLogos} />
