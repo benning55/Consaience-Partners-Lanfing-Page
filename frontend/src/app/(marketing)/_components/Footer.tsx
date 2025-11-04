@@ -11,33 +11,11 @@ export function Footer() {
               <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">C</span>
               </div>
-              <span className="font-semibold text-lg">Consaience Partners</span>
+              <span className="font-semibold text-lg">Consaience</span>
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
-              Plug-and-play adtech that helps sales teams target the right customer groups.
+              Salesforce Agentic AI solutions that help enterprises scale customer service without adding headcount.
             </p>
-          </div>
-
-          {/* Product */}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Product</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/product" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="/product#pricing" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/product#integrations" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Integrations
-                </Link>
-              </li>
-            </ul>
           </div>
 
           {/* Solutions */}
@@ -45,18 +23,23 @@ export function Footer() {
             <h3 className="font-semibold text-gray-900 mb-4">Solutions</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/solutions/enterprise" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Enterprise
+                <Link href="/products-services" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Products & Services
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/mid-market" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Mid-Market
+                <Link href="/use-cases" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Use Cases
                 </Link>
               </li>
               <li>
-                <Link href="/solutions/startups" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Startups
+                <Link href="/use-cases#contact-center" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Contact Center Automation
+                </Link>
+              </li>
+              <li>
+                <Link href="/use-cases#retail" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Retail & eCommerce
                 </Link>
               </li>
             </ul>
@@ -67,18 +50,40 @@ export function Footer() {
             <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/case-studies" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Case Studies
+                <Link href="/about" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="text-gray-600 hover:text-black transition-colors duration-200">
-                  Resources
+                <Link href="/bio" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Team
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-600 hover:text-black transition-colors duration-200">
                   Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="font-semibold text-gray-900 mb-4">Resources</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/privacy" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/security" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Security
+                </Link>
+              </li>
+              <li>
+                <Link href="/status" className="text-gray-600 hover:text-black transition-colors duration-200">
+                  Status
                 </Link>
               </li>
             </ul>
@@ -99,7 +104,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="text-gray-600 text-sm">
-            © {new Date().getFullYear()} Consaience Partners. All rights reserved.
+            © {new Date().getFullYear()} Consaience. All rights reserved.
           </p>
         </div>
       </div>

@@ -10,6 +10,7 @@ export default function ContactPage() {
     name: '',
     email: '',
     company: '',
+    role: '',
     message: '',
     honeypot: '', // Anti-spam field
   });
@@ -50,7 +51,7 @@ export default function ContactPage() {
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       setSubmitStatus('success');
-      setFormData({ name: '', email: '', company: '', message: '', honeypot: '' });
+      setFormData({ name: '', email: '', company: '', role: '', message: '', honeypot: '' });
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
@@ -77,11 +78,11 @@ export default function ContactPage() {
             className="text-center mb-12"
           >
             <h1 className="text-4xl font-bold mb-6 text-gray-900">
-              Get in touch
+              Let&apos;s transform your customer service
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Ready to start targeting the right accounts? Let&apos;s talk about how 
-              Consaience Partners can help your sales team win more deals.
+              Ready to automate your contact center with Salesforce Agentforce? 
+              Schedule a demo to see how we can help you scale without adding headcount.
             </p>
           </motion.div>
 
@@ -137,20 +138,38 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                  Company *
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors duration-200"
-                  placeholder="Your company name"
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                    Company *
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors duration-200"
+                    placeholder="Your company name"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="role" className="block text-sm font-medium text-gray-700 mb-2">
+                    Role *
+                  </label>
+                  <input
+                    type="text"
+                    id="role"
+                    name="role"
+                    value={formData.role}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors duration-200"
+                    placeholder="e.g., Customer Service Manager"
+                  />
+                </div>
               </div>
 
               <div>
@@ -164,7 +183,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-colors duration-200 resize-none"
-                  placeholder="Tell us about your use case, team size, or any questions you have..."
+                  placeholder="Tell us about your contact center, current challenges, or specific use cases you'd like to discuss..."
                 />
               </div>
 
@@ -183,7 +202,7 @@ export default function ContactPage() {
                   className="p-4 bg-green-50 border border-green-200 rounded-lg"
                 >
                   <p className="text-green-800">
-                    Thanks for reaching out! We&apos;ll get back to you within 24 hours.
+                    Thanks for reaching out! Our team will contact you within 24 hours to schedule a demo.
                   </p>
                 </motion.div>
               )}

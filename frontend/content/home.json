@@ -1,40 +1,61 @@
 {
-  "brand": { "name": "Consaience Partners" },
+  "brand": { "name": "Consaience" },
   "hero": {
-    "eyebrow": "Plug-and-play Adtech",
-    "title": "Target the right accounts. Win the right deals.",
-    "subtitle": "Consaience Partners snaps into your stack to help sales teams focus on customer groups most likely to convert—privacy-first and enterprise-ready.",
+    "eyebrow": "Agentic AI for Customer Service",
+    "title": "Scale your contact center without adding headcount",
+    "subtitle": "We help enterprises automate inquiries, resolve more cases, and deliver faster service using Salesforce Agentforce and AI.",
     "primaryCta": { "label": "Book a demo", "href": "/contact" },
-    "secondaryCta": { "label": "Talk to sales", "href": "/contact" },
-    "trustLogos": [{ "alt": "Brand A" }, { "alt": "Brand B" }, { "alt": "Brand C" }]
+    "secondaryCta": { "label": "Explore use cases", "href": "/use-cases" },
+    "trustLogos": [{ "alt": "Salesforce Partner" }, { "alt": "Service Cloud" }, { "alt": "Einstein AI" }]
   },
   "capabilities": [
-    { "icon": "users", "title": "Unified audience graph", "body": "Bring CRM, MAP, and web signals together without wrestling with IDs." },
-    { "icon": "shield", "title": "Privacy-safe activation", "body": "Consent-aware segmentation with regional controls built-in." },
-    { "icon": "workflow", "title": "Salesforce-friendly", "body": "Sync intent and segment membership straight into your pipelines." },
-    { "icon": "wand", "title": "Self-serve segments", "body": "Launch in minutes, not months—no data ticket required." },
-    { "icon": "bolt", "title": "Real-time audiences", "body": "Stream changes as they happen so go-to-market stays timely." },
-    { "icon": "puzzle", "title": "Plugs into anything", "body": "Adapters for ads, email, and web personalization—mocked safely here." }
+    { 
+      "icon": "bolt", 
+      "title": "More Cases, Less Labor", 
+      "body": "Scale your contact center with AI that resolves inquiries automatically—handle more volume without increasing headcount." 
+    },
+    { 
+      "icon": "wand", 
+      "title": "AI that Understands Your Business", 
+      "body": "Powered by your own Salesforce CRM and Knowledge Articles, our AI provides accurate, context-aware answers instantly." 
+    },
+    { 
+      "icon": "workflow", 
+      "title": "Fast Implementation", 
+      "body": "Deploy within weeks using Salesforce Agentforce frameworks. Start automating customer service quickly with minimal disruption." 
+    }
   ],
   "howItWorks": [
-    { "step": "Ingest", "body": "Connect CRM, upload CSVs, and add web events—no heavy lift.", "icon": "download" },
-    { "step": "Configure", "body": "Define segments by firmographic and behavioral traits.", "icon": "sliders" },
-    { "step": "Activate", "body": "Send audiences to channels and alert sales on high-intent activity.", "icon": "send" }
+    { 
+      "step": "Discover & Assess", 
+      "body": "We evaluate your current Salesforce setup, contact center workflows, and automation readiness to define quick wins.", 
+      "icon": "download" 
+    },
+    { 
+      "step": "Implement & Configure", 
+      "body": "Deploy Salesforce Agentforce integrated with your CRM and Knowledge Articles to automate inquiry resolution.", 
+      "icon": "sliders" 
+    },
+    { 
+      "step": "Optimize & Scale", 
+      "body": "Monitor performance, refine AI accuracy, and expand automation across channels as your business grows.", 
+      "icon": "send" 
+    }
   ],
   "metrics": [
-    { "label": "Faster activation", "value": "3x", "caption": "from segment to spend" },
-    { "label": "Lift in win rate", "value": "+18%", "caption": "on targeted accounts" },
-    { "label": "Setup time", "value": "< 1 day", "caption": "to first audience live" }
+    { "label": "Reduction in manual workload", "value": "30-50%", "caption": "across contact centers" },
+    { "label": "Faster response times", "value": "Instant", "caption": "for routine inquiries" },
+    { "label": "Setup time", "value": "< 4 weeks", "caption": "to first automation live" }
   ],
   "resources": [
-    { "title": "The B2B audience playbook", "slug": "b2b-audience-playbook" },
-    { "title": "Privacy by design for GTM teams", "slug": "privacy-by-design" },
-    { "title": "From MQLs to buying groups", "slug": "mqls-to-buying-groups" }
+    { "title": "Contact Center Automation Guide", "slug": "contact-center-automation" },
+    { "title": "Salesforce Agentforce Overview", "slug": "salesforce-agentforce" },
+    { "title": "AI Implementation Best Practices", "slug": "ai-implementation" }
   ],
   "ctaEndcap": {
-    "title": "Start targeting the right accounts today.",
-    "subtitle": "Plug in, define your first segment, and watch your pipeline sharpen.",
+    "title": "Ready to transform your customer service?",
+    "subtitle": "Book a demo and see how Salesforce Agentforce can automate your contact center operations.",
     "primaryCta": { "label": "Book a demo", "href": "/contact" },
-    "secondaryCta": { "label": "Talk to sales", "href": "/contact" }
+    "secondaryCta": { "label": "Learn more", "href": "/products-services" }
   }
 }

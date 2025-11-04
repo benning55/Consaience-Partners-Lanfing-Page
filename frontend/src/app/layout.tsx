@@ -14,20 +14,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Consaience Partners - Plug-and-play Adtech",
-  description: "Target the right accounts. Win the right deals. Consaience Partners snaps into your stack to help sales teams focus on customer groups most likely to convert—privacy-first and enterprise-ready.",
-  keywords: ["adtech", "sales", "targeting", "audience", "B2B", "enterprise"],
-  authors: [{ name: "Consaience Partners" }],
+  title: "Consaience - Salesforce Agentic AI Solutions",
+  description: "Scale your contact center without adding headcount. We help enterprises automate inquiries and resolve more cases using Salesforce Agentforce and AI.",
+  keywords: ["Salesforce", "Agentforce", "AI automation", "contact center", "customer service", "Einstein AI", "CRM"],
+  authors: [{ name: "Consaience" }],
   openGraph: {
-    title: "Consaience Partners - Plug-and-play Adtech",
-    description: "Target the right accounts. Win the right deals.",
+    title: "Consaience - Salesforce Agentic AI Solutions",
+    description: "Scale your contact center without adding headcount. AI-powered customer service automation.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Consaience Partners - Plug-and-play Adtech",
-    description: "Target the right accounts. Win the right deals.",
+    title: "Consaience - Salesforce Agentic AI Solutions",
+    description: "Scale your contact center without adding headcount. AI-powered customer service automation.",
   },
   robots: {
     index: true,

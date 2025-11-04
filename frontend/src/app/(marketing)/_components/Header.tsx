@@ -63,35 +63,35 @@ export function Header() {
             <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">C</span>
             </div>
-            <span className="font-semibold text-lg">Consaience Partners</span>
+            <span className="font-semibold text-lg">Consaience</span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {/* <Link 
-              href="/product" 
+            <Link 
+              href="/about" 
               className="text-gray-700 hover:text-black transition-colors duration-200"
             >
-              Product
+              About Us
             </Link>
             <Link 
-              href="/solutions" 
+              href="/products-services" 
               className="text-gray-700 hover:text-black transition-colors duration-200"
             >
-              Solutions
+              Products & Services
             </Link>
             <Link 
-              href="/case-studies" 
+              href="/use-cases" 
               className="text-gray-700 hover:text-black transition-colors duration-200"
             >
-              Case Studies
+              Use Cases
             </Link>
             <Link 
-              href="/resources" 
+              href="/contact" 
               className="text-gray-700 hover:text-black transition-colors duration-200"
             >
-              Resources
-            </Link> */}
+              Contact
+            </Link>
           </nav>
 
           {/* CTA Buttons */}
@@ -150,34 +150,34 @@ export function Header() {
             className="md:hidden border-t border-gray-200 bg-white"
           >
             <nav className="py-4 space-y-4">
-              {/* <Link 
-                href="/product" 
+              <Link 
+                href="/about" 
                 className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Product
+                About Us
               </Link>
               <Link 
-                href="/solutions" 
+                href="/products-services" 
                 className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Solutions
+                Products & Services
               </Link>
               <Link 
-                href="/case-studies" 
+                href="/use-cases" 
                 className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Case Studies
+                Use Cases
               </Link>
               <Link 
-                href="/resources" 
+                href="/contact" 
                 className="block px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-50 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Resources
-              </Link> */}
+                Contact
+              </Link>
               <div className="px-4 pt-4 border-t border-gray-200 space-y-3">
                 <Link 
                   href="/contact" 
