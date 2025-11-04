@@ -57,11 +57,11 @@ export function StickyPanels({ steps }: StickyPanelsProps) {
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl font-bold mb-6 text-gray-900">
-                  How it works
+                  How we operationalize agentic AI
                 </h2>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Get from setup to activation in three simple steps. 
-                  No complex integrations or months of configuration required.
+                  Launch Salesforce-native automation in weeks with a repeatable
+                  playbook that connects data, knowledge, and service workflows.
                 </p>
               </div>
 

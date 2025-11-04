@@ -4,7 +4,6 @@ import "./globals.css";
 import { AdtechProvider } from "@/lib/adtech";
 import { Header } from "./(marketing)/_components/Header";
 import { Footer } from "./(marketing)/_components/Footer";
-import { StructuredData } from "./(marketing)/_components/StructuredData";
 import { ScrollProgress } from "./(marketing)/_components/ScrollProgress";
 
 const inter = Inter({ 
@@ -14,20 +13,30 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Consaience Partners - Plug-and-play Adtech",
-  description: "Target the right accounts. Win the right deals. Consaience Partners snaps into your stack to help sales teams focus on customer groups most likely to convert—privacy-first and enterprise-ready.",
-  keywords: ["adtech", "sales", "targeting", "audience", "B2B", "enterprise"],
+  title: "Consaience Partners | Salesforce Agentic AI Automation",
+  description:
+    "Consaience Partners implements Salesforce Agentforce solutions that automate customer inquiries, integrate knowledge, and scale service operations with confidence.",
+  keywords: [
+    "Salesforce Agentforce",
+    "agentic AI",
+    "customer service automation",
+    "Einstein Copilot",
+    "Service Cloud",
+  ],
   authors: [{ name: "Consaience Partners" }],
   openGraph: {
-    title: "Consaience Partners - Plug-and-play Adtech",
-    description: "Target the right accounts. Win the right deals.",
+    title: "Consaience Partners | Salesforce Agentic AI Automation",
+    description:
+      "Agentic AI solutions built on Salesforce to resolve customer inquiries faster and reduce manual workload.",
     type: "website",
     locale: "en_US",
+    url: "https://consaience.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Consaience Partners - Plug-and-play Adtech",
-    description: "Target the right accounts. Win the right deals.",
+    title: "Consaience Partners | Salesforce Agentic AI Automation",
+    description:
+      "Salesforce-native automation services that blend AI, knowledge, and governance.",
   },
   robots: {
     index: true,
@@ -44,7 +53,6 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body className="antialiased bg-white text-black">
         <AdtechProvider>
-          <StructuredData />
           <ScrollProgress />
           <div className="min-h-screen flex flex-col">
             <Header />

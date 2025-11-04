@@ -5,18 +5,19 @@ import { motion } from "framer-motion"
 
 const financialStages = [
   {
-    title: "Financially Stable",
+    title: "Automation Ready",
     description:
-      "I have been saving occasionally and looking to automate and optimize it.",
+      "Salesforce data, knowledge, and governance are in place - we want to scale agentic AI across service teams.",
   },
   {
-    title: "At-Risk",
-    description: "I want to optimize spending so I can start to save.",
+    title: "Designing the Blueprint",
+    description:
+      "We're aligning data sources and workflows and need guidance to map our first Agentforce playbooks.",
   },
   {
-    title: "Debt-Burdened",
+    title: "Exploring the Opportunity",
     description:
-      "I have a bit of debt that I’d love to get some help to manage it.",
+      "We're assessing where to start with automation, which metrics to target, and the change management required.",
   },
 ]
 
@@ -45,10 +46,10 @@ export const FinancialSituation: React.FC<FinancialSituationProps> = ({
 
   const handleSelectStage = (stage: string) => {
     if (selectedStage === stage) {
-      setSelectedStage("") // Deselect if clicked again
-    } else {
-      setSelectedStage(stage)
+      setSelectedStage("") // Allow reset when the same pill is clicked
+      return
     }
+    setSelectedStage(stage)
   }
 
   useEffect(() => {
@@ -56,21 +57,20 @@ export const FinancialSituation: React.FC<FinancialSituationProps> = ({
       onFinancialSituationSuccess(selectedStage)
       scrollToNextSection()
     }
-  }, [selectedStage])
+  }, [selectedStage, onFinancialSituationSuccess])
 
   return (
     <section
       id='financialSituation'
-      className='bg-gradient-to-b from-[#FFFFFF] to-[#7832FE] py-24 bg-white'
+      className='bg-gradient-to-b from-white to-[#7832FE] py-24'
     >
       <div className='container mx-auto px-4'>
         <div className='section-heading text-center mb-12'>
           <h2 className='section-title text-4xl font-extrabold leading-tight'>
-            User Discovery
+            Automation readiness checkpoint
           </h2>
           <p className='section-description mt-4 text-xl leading-relaxed'>
-            Identify your current financial stage to receive tailored advice and
-            support.
+            Identify where your team is on the journey to Salesforce agentic AI so we can tailor the next step of the engagement.
           </p>
         </div>
         <div className='flex flex-col gap-8 items-center mt-10 lg:flex-row lg:items-start lg:justify-center'>
@@ -97,17 +97,16 @@ export const FinancialSituation: React.FC<FinancialSituationProps> = ({
                 animate={{
                   scale: selectedStage === title ? 1.05 : 1,
                   backgroundColor:
-                    selectedStage === title ? "#4CAF50" : "#7832FE",
+                    selectedStage === title ? "#111111" : "#7832FE",
                   transition: { duration: 0.2 },
                 }}
                 className={twMerge(
                   "btn btn-primary text-white px-6 py-3 rounded-full shadow-lg focus:ring-2 ",
-                  selectedStage === title && "cursor-not-allowed opacity-60"
+                  selectedStage === title && "bg-black"
                 )}
                 onClick={() => handleSelectStage(title)}
-                disabled={selectedStage === title}
               >
-                {selectedStage === title ? "Selected" : "Selection"}
+                {selectedStage === title ? "Selected" : "Select stage"}
               </motion.button>
             </motion.div>
           ))}

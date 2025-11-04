@@ -54,14 +54,14 @@ export function CapabilitiesGrid({ capabilities }: CapabilitiesGridProps) {
             variants={shouldReduceMotion ? {} : motionVariants.fadeInUp}
             className="section-title mb-6"
           >
-            Everything you need to target the right accounts
+            Agentic building blocks for Salesforce service teams
           </motion.h2>
           <motion.p
             variants={shouldReduceMotion ? {} : motionVariants.fadeInUp}
             className="section-description"
           >
-            Our platform brings together the tools and data you need to identify, 
-            segment, and activate high-intent audiences across your entire go-to-market stack.
+            Orchestrate data, knowledge, and automations so customers receive immediate,
+            accurate answers and agents stay focused on complex work.
           </motion.p>
         </motion.div>
 

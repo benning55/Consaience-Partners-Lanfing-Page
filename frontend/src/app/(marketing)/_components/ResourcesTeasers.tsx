@@ -32,14 +32,14 @@ export function ResourcesTeasers({ resources }: ResourcesTeasersProps) {
             variants={shouldReduceMotion ? {} : motionVariants.fadeInUp}
             className="section-title mb-6"
           >
-            Resources to get you started
+            Resources to plan your rollout
           </motion.h2>
           <motion.p
             variants={shouldReduceMotion ? {} : motionVariants.fadeInUp}
             className="section-description"
           >
-            Learn best practices, implementation guides, and industry insights 
-            to maximize your audience targeting success.
+            Explore checklists and playbooks that help your team prepare data,
+            knowledge, and processes for Salesforce Agentforce deployments.
           </motion.p>
         </motion.div>
 

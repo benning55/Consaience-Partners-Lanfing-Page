@@ -14,6 +14,7 @@ interface ParallaxHeroProps {
   eyebrow?: string;
   title: string;
   subtitle?: string;
+  supporting?: string;
   primaryCta?: { label: string; href: string };
   secondaryCta?: { label: string; href: string };
   trustLogos?: { alt: string }[];
@@ -23,6 +24,7 @@ export function ParallaxHero({
   eyebrow,
   title,
   subtitle,
+  supporting,
   primaryCta,
   secondaryCta,
   trustLogos = [],
@@ -124,7 +126,7 @@ export function ParallaxHero({
 
         <motion.div
           style={{ y: ctaY }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
         >
           {primaryCta && (
             <motion.div
@@ -158,6 +160,17 @@ export function ParallaxHero({
             </motion.div>
           )}
         </motion.div>
+
+        {supporting && (
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.75 }}
+            className="text-base text-gray-500 max-w-2xl mx-auto mb-12"
+          >
+            {supporting}
+          </motion.p>
+        )}
 
         {/* Trust Logos */}
         {trustLogos.length > 0 && (

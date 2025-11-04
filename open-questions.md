@@ -1,0 +1,5 @@
+- Confirm final hero CTA labels (currently “Book a strategy call” and “See how it works”) and their destination URLs—both point to existing site pages.
+- Provide verified KPI benchmarks (current tiles use 30–50% efficiency gains from the Notion draft; adjust if different figures are preferred).
+- Supply additional industry narratives if more than two verticals (Contact Centers, Retail & eCommerce) should be showcased on `/use-cases`.
+- Share definitive team roster details (names, roles, headshots, credentials) to replace the placeholder bios currently on `/bio`.
+- Confirm preferred trust logos/partners and contact details (email, phone) for footer + contact page.

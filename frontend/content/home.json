@@ -1,40 +1,70 @@
 {
   "brand": { "name": "Consaience Partners" },
   "hero": {
-    "eyebrow": "Plug-and-play Adtech",
-    "title": "Target the right accounts. Win the right deals.",
-    "subtitle": "Consaience Partners snaps into your stack to help sales teams focus on customer groups most likely to convert—privacy-first and enterprise-ready.",
-    "primaryCta": { "label": "Book a demo", "href": "/contact" },
-    "secondaryCta": { "label": "Talk to sales", "href": "/contact" },
-    "trustLogos": [{ "alt": "Brand A" }, { "alt": "Brand B" }, { "alt": "Brand C" }]
+    "eyebrow": "Salesforce Agentic Automation",
+    "title": "Empowering Agentic AI Solutions — Built on Salesforce and Beyond",
+    "subtitle": "We help enterprises automate inquiries, resolve more cases, and scale without adding headcount.",
+    "supporting": "Scale your contact center with AI that resolves inquiries automatically.",
+    "primaryCta": { "label": "Book a strategy call", "href": "/contact" },
+    "secondaryCta": { "label": "See how it works", "href": "/products-services" },
+    "trustLogos": []
   },
   "capabilities": [
-    { "icon": "users", "title": "Unified audience graph", "body": "Bring CRM, MAP, and web signals together without wrestling with IDs." },
-    { "icon": "shield", "title": "Privacy-safe activation", "body": "Consent-aware segmentation with regional controls built-in." },
-    { "icon": "workflow", "title": "Salesforce-friendly", "body": "Sync intent and segment membership straight into your pipelines." },
-    { "icon": "wand", "title": "Self-serve segments", "body": "Launch in minutes, not months—no data ticket required." },
-    { "icon": "bolt", "title": "Real-time audiences", "body": "Stream changes as they happen so go-to-market stays timely." },
-    { "icon": "puzzle", "title": "Plugs into anything", "body": "Adapters for ads, email, and web personalization—mocked safely here." }
+    {
+      "icon": "workflow",
+      "title": "More Cases, Less Labor",
+      "body": "Reduce manual workloads by automating repetitive enquiries inside Salesforce."
+    },
+    {
+      "icon": "wand",
+      "title": "AI that Understands Your Business",
+      "body": "Connect Agentforce and Einstein AI to your CRM and Knowledge Articles for accurate responses."
+    },
+    {
+      "icon": "bolt",
+      "title": "Fast Implementation",
+      "body": "Deploy within weeks using Salesforce Agentforce frameworks designed for SMEs and enterprises."
+    },
+    {
+      "icon": "shield",
+      "title": "Powered by Salesforce",
+      "body": "Keep every interaction governed by your existing Salesforce data, processes, and permissions."
+    }
   ],
   "howItWorks": [
-    { "step": "Ingest", "body": "Connect CRM, upload CSVs, and add web events—no heavy lift.", "icon": "download" },
-    { "step": "Configure", "body": "Define segments by firmographic and behavioral traits.", "icon": "sliders" },
-    { "step": "Activate", "body": "Send audiences to channels and alert sales on high-intent activity.", "icon": "send" }
+    {
+      "step": "Connect Salesforce data",
+      "body": "Link CRM records and Knowledge Articles so Agentforce can reference trusted answers.",
+      "icon": "download"
+    },
+    {
+      "step": "Configure intelligent agents",
+      "body": "Use Salesforce Agentforce and Einstein AI to understand enquiries and retrieve context.",
+      "icon": "sliders"
+    },
+    {
+      "step": "Activate and optimize",
+      "body": "Launch automation across channels and iterate using CRM history and agent feedback.",
+      "icon": "send"
+    }
   ],
   "metrics": [
-    { "label": "Faster activation", "value": "3x", "caption": "from segment to spend" },
-    { "label": "Lift in win rate", "value": "+18%", "caption": "on targeted accounts" },
-    { "label": "Setup time", "value": "< 1 day", "caption": "to first audience live" }
+    {
+      "label": "Manual workload reduction",
+      "value": "30-50%",
+      "caption": "Less manual handling for repeat enquiries"
+    },
+    {
+      "label": "Inquiries auto-resolved",
+      "value": "Up to 50%",
+      "caption": "Cases handled without human intervention"
+    }
   ],
-  "resources": [
-    { "title": "The B2B audience playbook", "slug": "b2b-audience-playbook" },
-    { "title": "Privacy by design for GTM teams", "slug": "privacy-by-design" },
-    { "title": "From MQLs to buying groups", "slug": "mqls-to-buying-groups" }
-  ],
+  "resources": [],
   "ctaEndcap": {
-    "title": "Start targeting the right accounts today.",
-    "subtitle": "Plug in, define your first segment, and watch your pipeline sharpen.",
-    "primaryCta": { "label": "Book a demo", "href": "/contact" },
-    "secondaryCta": { "label": "Talk to sales", "href": "/contact" }
+    "title": "Automate customer enquiry resolution with Salesforce Agentforce.",
+    "subtitle": "Bring AI, data, and process design together to deliver consistent, human-centered support.",
+    "primaryCta": { "label": "Book a strategy call", "href": "/contact" },
+    "secondaryCta": { "label": "Explore services", "href": "/products-services" }
   }
 }
