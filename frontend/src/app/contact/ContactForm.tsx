@@ -82,19 +82,19 @@ export function ContactForm() {
   };
 
   return (
-    <section className="section bg-white">
+    <section className="section bg-white pt-32 md:pt-40">
       <div className="container max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: shouldReduceMotion ? 0 : 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-12 px-4"
         >
-          <p className="eyebrow">Slide 6 / Next Step</p>
-          <h1 className="text-4xl font-bold mb-6 text-gray-900">
+          <p className="eyebrow">Get Started</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
             Let&apos;s design your agentic AI roadmap
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             Share your Salesforce landscape, customer scenarios, and automation goals. We&apos;ll review your message and respond with the next best step to move your automation program forward.
           </p>
         </motion.div>
@@ -202,7 +202,7 @@ export function ContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full btn btn-primary text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full btn btn-primary text-base md:text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Submit request'}
             </button>

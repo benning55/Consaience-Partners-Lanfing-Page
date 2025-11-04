@@ -7,12 +7,12 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useReducedMotionPref } from '@/lib/motion';
 
 const navItems = [
-  { href: '/', label: 'Overview' },
-  { href: '/about', label: 'Our Approach' },
-  { href: '/products-services', label: 'Services' },
-  { href: '/use-cases', label: 'Use Cases' },
-  { href: '/contact', label: 'Let\'s Talk' },
-  { href: '/bio', label: 'Team' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About Us' },
+  { href: '/products-services', label: 'Product & Services' },
+  { href: '/use-cases', label: 'Industrial Use Cases' },
+  { href: '/contact', label: 'Contact Us' },
+  { href: '/bio', label: 'Bio' },
 ];
 
 export function Header() {
@@ -61,27 +61,27 @@ export function Header() {
       }}
       className={`fixed top-6 left-4 right-4 z-40 transition-all duration-300 rounded-2xl ${
         isScrolled
-          ? 'bg-white/90 backdrop-blur-md border border-gray-200 shadow-lg'
-          : 'bg-white/80 backdrop-blur-sm border border-gray-100 shadow-sm'
+          ? 'bg-white/95 backdrop-blur-md border border-gray-200 shadow-xl'
+          : 'bg-white/90 backdrop-blur-sm border border-gray-100 shadow-md'
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">C</span>
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="w-9 h-9 bg-black rounded-lg flex items-center justify-center group-hover:bg-gray-800 transition-colors duration-200 shadow-sm">
+              <span className="text-white font-bold text-base">C</span>
             </div>
-            <span className="font-semibold text-lg">Consaience Partners</span>
+            <span className="font-semibold text-lg text-gray-900">Consaience Partners</span>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navItems.map((item) => {
               const active = isActive(item.href);
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-sm font-medium transition-colors duration-200 ${
+                  className={`text-sm font-semibold transition-colors duration-200 whitespace-nowrap ${
                     active
                       ? 'text-black'
                       : 'text-gray-600 hover:text-black focus-visible:text-black'
@@ -93,21 +93,15 @@ export function Header() {
             })}
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Link
-              href="/contact"
-              className="text-sm font-medium text-gray-600 hover:text-black transition-colors duration-200"
-            >
-              Talk to an expert
-            </Link>
-            <Link href="/contact" className="btn btn-primary">
+          <div className="hidden lg:flex items-center space-x-4">
+            <Link href="/contact" className="btn btn-primary px-5 py-2.5 text-sm">
               Book a strategy call
             </Link>
           </div>
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
@@ -126,9 +120,9 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-gray-200 bg-white"
+            className="lg:hidden border-t border-gray-200 bg-white"
           >
-            <nav className="py-4 space-y-2">
+            <nav className="py-4 space-y-2 max-h-[70vh] overflow-y-auto">
               {navItems.map((item) => {
                 const active = isActive(item.href);
                 return (
@@ -147,14 +141,7 @@ export function Header() {
                 );
               })}
 
-              <div className="px-4 pt-4 border-t border-gray-200 space-y-3">
-                <Link
-                  href="/contact"
-                  className="block w-full text-center py-2 text-gray-700 hover:text-black transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Talk to an expert
-                </Link>
+              <div className="px-4 pt-4 border-t border-gray-200">
                 <Link
                   href="/contact"
                   className="block w-full text-center btn btn-primary"

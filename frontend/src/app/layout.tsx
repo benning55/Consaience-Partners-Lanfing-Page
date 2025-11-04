@@ -13,30 +13,31 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Consaience Partners | Salesforce Agentic AI Automation",
+  title: "Consaience Partners | Enterprise AI Automation on Salesforce",
   description:
-    "Consaience Partners implements Salesforce Agentforce solutions that automate customer inquiries, integrate knowledge, and scale service operations with confidence.",
+    "Consaience Partners implements enterprise-grade Salesforce Agentforce solutions that automate customer inquiries, integrate knowledge, and scale service operations with confidence.",
   keywords: [
     "Salesforce Agentforce",
-    "agentic AI",
+    "enterprise AI",
     "customer service automation",
-    "Einstein Copilot",
+    "Einstein AI",
     "Service Cloud",
+    "B2B AI automation",
   ],
   authors: [{ name: "Consaience Partners" }],
   openGraph: {
-    title: "Consaience Partners | Salesforce Agentic AI Automation",
+    title: "Consaience Partners | Enterprise AI Automation on Salesforce",
     description:
-      "Agentic AI solutions built on Salesforce to resolve customer inquiries faster and reduce manual workload.",
+      "Enterprise AI solutions built on Salesforce to resolve customer inquiries faster and reduce manual workload.",
     type: "website",
     locale: "en_US",
     url: "https://consaience.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Consaience Partners | Salesforce Agentic AI Automation",
+    title: "Consaience Partners | Enterprise AI Automation on Salesforce",
     description:
-      "Salesforce-native automation services that blend AI, knowledge, and governance.",
+      "Enterprise-grade Salesforce automation services that blend AI, knowledge, and governance.",
   },
   robots: {
     index: true,
@@ -56,7 +57,7 @@ export default function RootLayout({
           <ScrollProgress />
           <div className="min-h-screen flex flex-col">
             <Header />
-            <main className="flex-1 pt-24">
+            <main className="flex-1">
               {children}
             </main>
             <Footer />

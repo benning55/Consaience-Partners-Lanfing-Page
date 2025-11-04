@@ -1,29 +1,29 @@
 import Link from 'next/link';
 
 const navigationLinks = [
-  { href: '/', label: 'Overview' },
-  { href: '/about', label: 'Our Approach' },
-  { href: '/products-services', label: 'Services' },
-  { href: '/use-cases', label: 'Use Cases' },
-  { href: '/contact', label: 'Let\'s Talk' },
-  { href: '/bio', label: 'Team' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About Us' },
+  { href: '/products-services', label: 'Product & Services' },
+  { href: '/use-cases', label: 'Industrial Use Cases' },
+  { href: '/contact', label: 'Contact Us' },
+  { href: '/bio', label: 'Bio' },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="container mx-auto px-6 py-12">
+    <footer className="bg-white border-t-2 border-gray-100">
+      <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">C</span>
+            <Link href="/" className="flex items-center space-x-3 mb-6 group">
+              <div className="w-9 h-9 bg-black rounded-lg flex items-center justify-center group-hover:bg-gray-800 transition-colors duration-200 shadow-sm">
+                <span className="text-white font-bold text-base">C</span>
               </div>
-              <span className="font-semibold text-lg">Consaience Partners</span>
+              <span className="font-semibold text-lg text-gray-900">Consaience Partners</span>
             </Link>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Agentic AI solutions built on Salesforce to automate customer inquiries, reduce manual
-              workload, and scale support operations without sacrificing trust.
+            <p className="text-gray-600 text-base leading-relaxed">
+              Enterprise AI automation built on Salesforce to resolve customer inquiries, reduce manual
+              workload, and scale support operations with confidence.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export function Footer() {
 
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Services</h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-base">
               <li className="text-gray-600">
                 Salesforce Agentforce implementation
               </li>
@@ -63,23 +63,23 @@ export function Footer() {
 
           <div>
             <h3 className="font-semibold text-gray-900 mb-4">Contact</h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-base">
               <li className="text-gray-600">
-                Use the contact form to share your enquiry and the team will follow up directly.
+                Share your enquiry using our contact form and our team will follow up directly.
               </li>
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-600 hover:text-black transition-colors duration-200"
+                  className="text-gray-900 hover:text-black font-medium transition-colors duration-200"
                 >
-                  Go to contact form
+                  Go to contact form →
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t-2 border-gray-100 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-wrap gap-6 mb-4 md:mb-0">
             <Link
               href="/privacy"

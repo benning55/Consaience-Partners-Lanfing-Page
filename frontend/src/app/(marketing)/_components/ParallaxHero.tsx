@@ -74,7 +74,7 @@ export function ParallaxHero({
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-white via-gray-50/30 to-white pt-32 md:pt-20"
     >
       {/* Enhanced Background Elements */}
       <BackgroundElements variant="hero" intensity="medium" />
@@ -84,7 +84,7 @@ export function ParallaxHero({
       {/* Subtle gradient overlay */}
       <motion.div
         style={{ y: backgroundY }}
-        className="absolute inset-0 bg-gradient-to-br from-gray-50/30 via-transparent to-gray-100/20"
+        className="absolute inset-0 bg-gradient-to-br from-gray-50/20 via-transparent to-gray-100/10"
       />
 
       {/* Content */}
@@ -104,10 +104,10 @@ export function ParallaxHero({
             </motion.p>
           )}
           
-          <h1 className="text-balance mb-6">
+          <h1 className="text-balance mb-8">
             <StaggeredText 
               text={title} 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold"
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight"
               staggerDelay={0.08}
             />
           </h1>
@@ -117,7 +117,7 @@ export function ParallaxHero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed"
+              className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed font-medium"
             >
               {subtitle}
             </motion.p>
@@ -126,18 +126,19 @@ export function ParallaxHero({
 
         <motion.div
           style={{ y: ctaY }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-10"
         >
           {primaryCta && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
+              className="w-full sm:w-auto"
             >
               <Link
                 href={primaryCta.href}
                 onClick={() => handleCtaClick(primaryCta, 'hero_primary')}
-                className="btn btn-primary text-lg px-8 py-4"
+                className="btn btn-primary text-base md:text-lg px-8 py-3.5 md:px-10 md:py-5 shadow-lg hover:shadow-xl w-full sm:w-auto"
               >
                 {primaryCta.label}
               </Link>
@@ -149,11 +150,12 @@ export function ParallaxHero({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
+              className="w-full sm:w-auto"
             >
               <Link
                 href={secondaryCta.href}
                 onClick={() => handleCtaClick(secondaryCta, 'hero_secondary')}
-                className="btn btn-secondary text-lg px-8 py-4"
+                className="btn btn-secondary text-base md:text-lg px-8 py-3.5 md:px-10 md:py-5 w-full sm:w-auto"
               >
                 {secondaryCta.label}
               </Link>
@@ -166,7 +168,7 @@ export function ParallaxHero({
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.75 }}
-            className="text-base text-gray-500 max-w-2xl mx-auto mb-12"
+            className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-16 leading-relaxed"
           >
             {supporting}
           </motion.p>

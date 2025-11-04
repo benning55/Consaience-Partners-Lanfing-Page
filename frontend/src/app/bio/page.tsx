@@ -59,19 +59,19 @@ const pods = [
 
 export default function BioPage() {
   return (
-    <section className="section bg-white">
+    <section className="section bg-white pt-32 md:pt-40">
       <div className="container max-w-5xl">
-        <div className="text-center mb-12">
-          <p className="eyebrow">Slide 1 / Who executes the work</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 px-4">
+          <p className="eyebrow">Our Team</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Leadership pods ready to run your agentic programme
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             Detailed biographies are available under NDA. The outline below shows the pods involved in every engagement and how they align to your Salesforce transformation.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {pods.map((pod) => (
             <article key={pod.title} className="card bg-white flex flex-col">
               <h2 className="text-2xl font-semibold text-gray-900 mb-3">{pod.title}</h2>
@@ -88,11 +88,11 @@ export default function BioPage() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 px-4">
           <p className="text-gray-600 mb-4">
             Need full CVs, security clearances, or references? Contact us and we&apos;ll provide the documentation your diligence process requires.
           </p>
-          <Link href="/contact" className="btn btn-primary">
+          <Link href="/contact" className="btn btn-primary w-full sm:w-auto">
             Request full bios
           </Link>
         </div>

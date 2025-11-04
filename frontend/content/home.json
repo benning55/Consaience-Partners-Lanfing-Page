@@ -1,80 +1,80 @@
 {
   "brand": { "name": "Consaience Partners" },
   "hero": {
-    "eyebrow": "Slide 1 / Problem & Promise",
-    "title": "Agentic AI on Salesforce resolves customer inquiries automatically.",
-    "subtitle": "Consaience Partners helps enterprises automate enquiries, resolve more cases, and scale customer service without adding headcount.",
-    "supporting": "We combine Salesforce Agentforce, Einstein AI, and your Knowledge Articles so every response is fast, accurate, and governed.",
+    "eyebrow": "Enterprise AI Automation",
+    "title": "Agentic AI on Salesforce resolves customer inquiries automatically",
+    "subtitle": "Consaience Partners delivers enterprise-grade automation that resolves inquiries, reduces manual workload, and scales customer service operations without additional headcount.",
+    "supporting": "Built on Salesforce Agentforce and Einstein AI, our solutions leverage your CRM data and Knowledge Articles to deliver fast, accurate, and governed responses.",
     "primaryCta": { "label": "Book a strategy call", "href": "/contact" },
-    "secondaryCta": { "label": "See the full solution", "href": "/products-services" },
+    "secondaryCta": { "label": "Explore our solutions", "href": "/products-services" },
     "trustLogos": []
   },
-  "capabilitiesEyebrow": "Slide 2 / Solution Snapshot",
-  "capabilitiesTitle": "What Consaience Partners delivers",
-  "capabilitiesDescription": "Salesforce-native automations that understand enquiries, resolve them automatically, and hand off complex cases with full context.",
+  "capabilitiesEyebrow": "Core Capabilities",
+  "capabilitiesTitle": "Enterprise-grade AI automation for Salesforce",
+  "capabilitiesDescription": "Salesforce-native automation that understands inquiries, resolves them automatically, and escalates complex cases with full context.",
   "capabilities": [
     {
       "icon": "workflow",
-      "title": "More cases, less labour",
-      "body": "Automate repetitive enquiries inside Salesforce so agents stay focused on conversations that need judgement."
+      "title": "Increased case resolution capacity",
+      "body": "Automate repetitive inquiries within Salesforce, enabling agents to focus on high-value interactions requiring human judgment."
     },
     {
       "icon": "wand",
-      "title": "AI that understands your business",
-      "body": "Ground every answer in your CRM and Knowledge Articles so responses stay accurate and brand-aligned."
+      "title": "Business-context aware AI",
+      "body": "Ground every response in your CRM data and Knowledge Articles to ensure accuracy, consistency, and brand alignment."
     },
     {
       "icon": "bolt",
-      "title": "Fast implementation",
-      "body": "Deploy Agentforce playbooks in weeks using frameworks tuned for SMEs and global enterprises."
+      "title": "Rapid deployment framework",
+      "body": "Deploy enterprise-grade Agentforce solutions in weeks using proven frameworks optimized for SMEs and global organizations."
     },
     {
       "icon": "shield",
-      "title": "Powered by Salesforce",
-      "body": "Leverage existing permissions, governance, and audit trails to keep automation compliant from day one."
+      "title": "Enterprise-grade governance",
+      "body": "Leverage Salesforce permissions, governance frameworks, and audit trails to maintain compliance and security standards."
     }
   ],
-  "howItWorksEyebrow": "Slide 3 / Implementation Blueprint",
-  "howItWorksTitle": "How we launch an agentic service desk",
-  "howItWorksDescription": "A three-step motion that connects your Salesforce data, configures intelligent agents, and iterates with live feedback.",
+  "howItWorksEyebrow": "Implementation Approach",
+  "howItWorksTitle": "Enterprise deployment methodology",
+  "howItWorksDescription": "A proven three-phase approach that connects Salesforce data, configures intelligent agents, and optimizes through continuous feedback.",
   "howItWorks": [
     {
-      "step": "Connect Salesforce data",
-      "body": "Link CRM records and Knowledge Articles so Agentforce can reference trusted answers.",
+      "step": "Data integration and configuration",
+      "body": "Connect CRM records and Knowledge Articles to establish trusted data sources for AI-powered responses.",
       "icon": "download"
     },
     {
-      "step": "Configure intelligent agents",
-      "body": "Use Salesforce Agentforce and Einstein AI to understand enquiries and retrieve context-aware guidance.",
+      "step": "Intelligent agent deployment",
+      "body": "Configure Salesforce Agentforce and Einstein AI to understand inquiries and deliver context-aware, accurate guidance.",
       "icon": "sliders"
     },
     {
-      "step": "Activate and optimise",
-      "body": "Launch automation across channels and iterate using CRM history and agent feedback.",
+      "step": "Activation and optimization",
+      "body": "Launch multi-channel automation and continuously optimize using CRM analytics and agent feedback loops.",
       "icon": "send"
     }
   ],
-  "metricsEyebrow": "Slide 5 / Market Validation",
-  "metricsTitle": "Measured impact from live deployments",
-  "metricsDescription": "Our customers cut manual handling while preserving service quality across channels.",
+  "metricsEyebrow": "Proven Results",
+  "metricsTitle": "Measured business impact",
+  "metricsDescription": "Enterprise clients achieve significant operational efficiency gains while maintaining service quality standards.",
   "metrics": [
     {
-      "label": "Manual workload reduction",
+      "label": "Operational efficiency gain",
       "value": "30-50%",
-      "caption": "Less manual handling for repeat enquiries"
+      "caption": "Reduction in manual handling for routine inquiries"
     },
     {
-      "label": "Inquiries auto-resolved",
+      "label": "Automated resolution rate",
       "value": "Up to 50%",
-      "caption": "Cases handled without human intervention"
+      "caption": "Inquiries resolved without agent intervention"
     }
   ],
   "resources": [],
   "ctaEndcap": {
-    "eyebrow": "Slide 6 / Next Step",
-    "title": "Ready to scale support without adding headcount?",
-    "subtitle": "Book a strategy call to map your first Salesforce Agentforce use case and see where automation delivers the fastest return.",
+    "eyebrow": "Get Started",
+    "title": "Scale customer service operations without expanding headcount",
+    "subtitle": "Schedule a strategy session to identify your highest-impact Salesforce Agentforce use case and accelerate ROI.",
     "primaryCta": { "label": "Book a strategy call", "href": "/contact" },
-    "secondaryCta": { "label": "Explore services", "href": "/products-services" }
+    "secondaryCta": { "label": "View solutions", "href": "/products-services" }
   }
 }

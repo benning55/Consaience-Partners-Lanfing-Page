@@ -125,20 +125,20 @@ export default function ProductsServicesPage() {
         />
       ))}
 
-      <section className="section bg-white">
+      <section className="section bg-white pt-32 md:pt-40">
         <div className="container max-w-4xl text-center">
-          <p className="eyebrow">Slide 1 / Service Portfolio</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <p className="eyebrow">Service Portfolio</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 px-4">
             Salesforce-native services for automated enquiry resolution
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed px-4 max-w-3xl mx-auto">
             Every engagement uses Salesforce Agentforce, Einstein AI, and Knowledge Articles to automate repeat enquiries and support hybrid human + AI workflows.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-            <Link href="/contact" className="btn btn-primary">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 px-4">
+            <Link href="/contact" className="btn btn-primary w-full sm:w-auto">
               Book a strategy call
             </Link>
-            <Link href="/use-cases" className="btn btn-secondary">
+            <Link href="/use-cases" className="btn btn-secondary w-full sm:w-auto">
               See customer outcomes
             </Link>
           </div>
@@ -147,14 +147,14 @@ export default function ProductsServicesPage() {
 
       <section className="section bg-gray-50">
         <div className="container max-w-6xl">
-          <div className="text-center mb-12">
-            <p className="eyebrow">Slide 2 / Offerings</p>
+          <div className="text-center mb-12 px-4">
+            <p className="eyebrow">Our Offerings</p>
             <h2 className="section-title mb-4">How we build and sustain agentic service</h2>
             <p className="section-description">
               Five service pillars covering implementation, automation, knowledge readiness, organisational change, and continuous optimisation.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {offerings.map((offering) => (
               <div key={offering.title} className="card bg-white flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
@@ -184,11 +184,11 @@ export default function ProductsServicesPage() {
         <div className="container max-w-5xl card border-gray-200">
           <div className="flex flex-col lg:flex-row gap-6 lg:items-center">
             <div className="flex-1">
-              <p className="eyebrow mb-4">Slide 3 / Engagement Model</p>
-              <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              <p className="eyebrow mb-4">Engagement Model</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 Map your first agentic automation with us
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
                 Share your current Salesforce footprint, enquiry volumes, and service KPIs. We will respond with a tailored roadmap covering implementation milestones, required stakeholders, and the optimisation plan that keeps automation improving.
               </p>
             </div>

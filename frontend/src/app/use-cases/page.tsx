@@ -93,13 +93,13 @@ export default function UseCasesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(useCasesJsonLd) }}
       />
 
-      <section className="section bg-white">
+      <section className="section bg-white pt-32 md:pt-40">
         <div className="container max-w-4xl text-center">
-          <p className="eyebrow">Slide 1 / Why customers choose us</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <p className="eyebrow">Real-World Applications</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 px-4">
             Agentic AI in action across contact centres and retail
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed px-4 max-w-3xl mx-auto">
             Each scenario starts with the same story: high enquiry volume, limited headcount, and inconsistent answers. Salesforce Agentforce lets us deliver automation grounded in your own CRM and knowledge assets.
           </p>
         </div>
@@ -114,9 +114,9 @@ export default function UseCasesPage() {
               className="card bg-white flex flex-col"
             >
               <div className="flex items-center gap-3 mb-4">
-                <useCase.icon className="w-8 h-8 text-black" />
-                <h2 className="text-xl font-semibold text-gray-900">
-                  {`Slide ${index + 2} / ${useCase.industry}`}
+                <useCase.icon className="w-8 h-8 md:w-10 md:h-10 text-black flex-shrink-0" />
+                <h2 className="text-lg md:text-xl font-semibold text-gray-900">
+                  {useCase.industry}
                 </h2>
               </div>
               <div className="mt-2">
@@ -163,15 +163,15 @@ export default function UseCasesPage() {
 
       <section className="section bg-white">
         <div className="container max-w-4xl card border-gray-200 text-center">
-          <p className="eyebrow mb-4">Slide 4 / Shape your scenario</p>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <p className="eyebrow mb-4">Get Started</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 px-4">
             Ready to scope an agentic AI pilot?
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 px-4">
             Share your current enquiry mix, channels, and service KPIs. We will map the automation opportunity, the Agentforce components required, and how to measure impact within your first 90 days.
           </p>
-          <div className="flex justify-center">
-            <Link href="/contact" className="btn btn-primary">
+          <div className="flex justify-center px-4">
+            <Link href="/contact" className="btn btn-primary w-full sm:w-auto">
               Start the conversation
             </Link>
           </div>

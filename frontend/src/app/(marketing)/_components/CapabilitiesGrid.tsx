@@ -45,7 +45,7 @@ export function CapabilitiesGrid({
   const shouldReduceMotion = useReducedMotionPref();
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden">
+    <section className="section bg-white relative overflow-hidden border-t border-gray-100">
       {/* Background Elements */}
       <BackgroundElements variant="section" intensity="subtle" />
       <FloatingElements count={10} intensity="subtle" size="small" />
@@ -95,21 +95,21 @@ export function CapabilitiesGrid({
               <motion.div
                 key={index}
                 variants={shouldReduceMotion ? {} : motionVariants.staggerItem}
-                className="card group hover:shadow-lg transition-all duration-300"
+                className="card group hover:shadow-xl transition-all duration-300"
               >
-                <div className="flex items-start space-x-4">
+                <div className="flex items-start space-x-5">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center group-hover:bg-gray-800 transition-colors duration-300">
+                    <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center group-hover:bg-gray-800 group-hover:scale-105 transition-all duration-300 shadow-md">
                       {IconComponent && (
-                        <IconComponent className="w-6 h-6 text-white" />
+                        <IconComponent className="w-7 h-7 text-white" />
                       )}
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-lg mb-2 text-gray-900">
+                    <h3 className="font-semibold text-xl mb-3 text-gray-900">
                       {capability.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-base text-gray-600 leading-relaxed">
                       {capability.body}
                     </p>
                   </div>

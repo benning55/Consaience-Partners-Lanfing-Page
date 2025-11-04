@@ -15,16 +15,16 @@ import { homeContent } from '@/lib/content';
 const canonicalUrl = 'https://consaience.com/';
 
 export const metadata: Metadata = {
-  title: 'Consaience Partners | Salesforce Agentic AI Automation',
+  title: 'Consaience Partners | Enterprise AI Automation on Salesforce',
   description:
-    'Consaience Partners designs Salesforce Agentforce solutions that automate customer inquiries, reduce manual workload, and scale service operations.',
+    'Consaience Partners delivers Salesforce Agentforce solutions that automate customer inquiries, reduce manual workload, and scale enterprise service operations.',
   alternates: {
     canonical: canonicalUrl,
   },
   openGraph: {
-    title: 'Consaience Partners | Salesforce Agentic AI Automation',
+    title: 'Consaience Partners | Enterprise AI Automation on Salesforce',
     description:
-      'Automate inquiry resolution with agentic AI grounded in Salesforce data, knowledge, and governance.',
+      'Automate inquiry resolution with enterprise-grade agentic AI grounded in Salesforce data, knowledge, and governance.',
     url: canonicalUrl,
     siteName: 'Consaience Partners',
     type: 'website',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Consaience Partners | Salesforce Agentic AI Automation',
+    title: 'Consaience Partners | Enterprise AI Automation on Salesforce',
     description:
-      'Agentic AI for Salesforce teams that want to resolve more customer inquiries with less manual effort.',
+      'Enterprise AI automation for Salesforce teams that resolve more customer inquiries with less manual effort.',
   },
 };
 
@@ -44,7 +44,7 @@ const websiteJsonLd = {
   name: 'Consaience Partners',
   url: canonicalUrl,
   description:
-    'Consaience Partners helps enterprises automate customer inquiries with Salesforce Agentforce and Einstein Copilot.',
+    'Consaience Partners helps enterprises automate customer inquiries with enterprise-grade Salesforce Agentforce and Einstein AI solutions.',
   publisher: {
     '@type': 'Organization',
     name: 'Consaience Partners',
@@ -88,42 +88,44 @@ export default function HomePage() {
       </div>
 
       <SplitReveal>
-        <div>
-          <p className="eyebrow">Slide 4 / Use Case Spotlight</p>
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">
-            AI-powered contact center automation
+        <div className="px-4 lg:px-0">
+          <p className="eyebrow">Use Case Spotlight</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900">
+            Enterprise contact center automation
           </h2>
-          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Whether you are an SME modernising service or a global enterprise scaling support,
-            manual case handling slows teams down. Salesforce Agentforce automation resolves
-            repetitive enquiries instantly so agents stay focused on complex issues.
+          <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-6 lg:mb-8 leading-relaxed">
+            From mid-market organizations modernizing service operations to global enterprises 
+            scaling support infrastructure, manual case handling creates operational bottlenecks. 
+            Salesforce Agentforce automation resolves routine inquiries instantly, enabling agents 
+            to focus on complex, high-value interactions.
           </p>
-          <ul className="space-y-3 mb-6">
+          <ul className="space-y-3 lg:space-y-4 mb-6 lg:mb-8">
             <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-black rounded-full mt-2" />
-              <span className="text-gray-700">
-                Understands and responds to customer enquiries using Salesforce CRM data and Knowledge Articles.
+              <div className="w-2 h-2 bg-black rounded-full mt-1.5 flex-shrink-0" />
+              <span className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Processes and responds to customer inquiries using Salesforce CRM data and enterprise Knowledge Articles
               </span>
             </li>
             <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-black rounded-full mt-2" />
-              <span className="text-gray-700">
-                Escalates complex cases to human agents with full context so resolution stays fast and accurate.
+              <div className="w-2 h-2 bg-black rounded-full mt-1.5 flex-shrink-0" />
+              <span className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Escalates complex cases to human agents with full context to maintain resolution speed and accuracy
               </span>
             </li>
             <li className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-black rounded-full mt-2" />
-              <span className="text-gray-700">
-                Learns from closed cases to extend automation coverage across channels.
+              <div className="w-2 h-2 bg-black rounded-full mt-1.5 flex-shrink-0" />
+              <span className="text-gray-700 text-sm md:text-base leading-relaxed">
+                Continuously learns from resolved cases to expand automation coverage across all customer channels
               </span>
             </li>
           </ul>
-          <p className="text-gray-600">
-            Built on Salesforce Service Cloud and Agentforce, the solution leverages the data,
-            processes, and knowledge you already trust to deliver immediate automation.
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6 lg:mb-8">
+            Built on Salesforce Service Cloud and Agentforce, our solutions leverage your existing 
+            data infrastructure, business processes, and knowledge repositories to deliver immediate, 
+            measurable automation value.
           </p>
-          <Link href="/use-cases" className="inline-flex mt-8 btn btn-secondary">
-            Explore more use cases
+          <Link href="/use-cases" className="inline-flex btn btn-secondary text-sm md:text-base">
+            View enterprise use cases
           </Link>
         </div>
       </SplitReveal>

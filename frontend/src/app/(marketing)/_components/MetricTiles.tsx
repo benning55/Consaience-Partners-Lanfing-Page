@@ -28,7 +28,7 @@ export function MetricTiles({
   const shouldReduceMotion = useReducedMotionPref();
 
   return (
-    <section className="section bg-gray-50 relative overflow-hidden">
+    <section className="section bg-gradient-to-b from-white to-gray-50 relative overflow-hidden border-t border-gray-100">
       <BackgroundElements variant="section" intensity="subtle" />
       <AnimatedLines variant="horizontal" intensity="subtle" />
 
@@ -63,15 +63,15 @@ export function MetricTiles({
                 whileInView={{ scale: 1, y: 0 }}
                 viewport={{ once: true, margin: '-10% 0px' }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card hover:shadow-lg transition-all duration-300"
+                className="card hover:shadow-xl transition-all duration-300 text-center"
               >
-                <div className="text-4xl font-bold text-black mb-2">
+                <div className="text-5xl md:text-6xl font-bold text-black mb-4">
                   {metric.value}
                 </div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <h3 className="font-semibold text-xl text-gray-900 mb-3">
                   {metric.label}
                 </h3>
-                <p className="text-gray-600">{metric.caption}</p>
+                <p className="text-base text-gray-600 leading-relaxed">{metric.caption}</p>
               </motion.div>
             </motion.div>
           ))}

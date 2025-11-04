@@ -29,14 +29,14 @@ export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta, eyebrow }
   };
 
   return (
-    <section className="relative section bg-gray-900 text-white overflow-hidden">
+    <section className="relative section bg-gray-900 text-white overflow-hidden border-t border-gray-800">
       {/* Enhanced Background Elements */}
       <BackgroundElements variant="cta" intensity="strong" />
       <FloatingElements count={12} intensity="medium" size="medium" />
       <AnimatedLines variant="diagonal" intensity="medium" />
       
       {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-800" />
 
       <div className="container relative z-10">
         <motion.div
@@ -51,11 +51,11 @@ export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta, eyebrow }
               {eyebrow}
             </p>
           )}
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-white">
             {title}
           </h2>
           
-          <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
             {subtitle}
           </p>
 
@@ -64,12 +64,12 @@ export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta, eyebrow }
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-10% 0px' }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto px-4 sm:px-0"
           >
             <Link
               href={primaryCta.href}
               onClick={() => handleCtaClick(primaryCta, 'endcap_primary')}
-              className="btn bg-white text-black hover:bg-gray-100 text-lg px-8 py-4"
+              className="btn bg-white text-black hover:bg-gray-100 text-base md:text-lg px-8 py-3.5 md:px-10 md:py-5 font-semibold shadow-xl hover:shadow-2xl w-full sm:w-auto"
             >
               {primaryCta.label}
             </Link>
@@ -77,7 +77,7 @@ export function CTAEndcap({ title, subtitle, primaryCta, secondaryCta, eyebrow }
             <Link
               href={secondaryCta.href}
               onClick={() => handleCtaClick(secondaryCta, 'endcap_secondary')}
-              className="btn border border-gray-600 text-white hover:bg-gray-800 text-lg px-8 py-4"
+              className="btn border-2 border-gray-400 text-white hover:bg-gray-800 hover:border-gray-300 text-base md:text-lg px-8 py-3.5 md:px-10 md:py-5 font-semibold w-full sm:w-auto"
             >
               {secondaryCta.label}
             </Link>
